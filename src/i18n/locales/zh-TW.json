@@ -9571,7 +9571,9 @@
       "alipayFallbackHint": "可重新開啟支付寶，或儲存下方二維碼後從支付寶相簿識別",
       "reopenAlipay": "重新開啟支付寶",
       "saveQRCode": "儲存二維碼",
-      "alipaySaveAndScanHint": "儲存二維碼後，開啟支付寶掃一掃，從相簿選擇二維碼"
+      "alipaySaveAndScanHint": "儲存二維碼後，開啟支付寶掃一掃，從相簿選擇二維碼",
+      "scanWeappHint": "請使用微信掃描或長按識別小程序碼，在小程序內完成支付",
+      "openWeapp": "開啟微信小程序支付"
     },
     "orders": {
       "title": "我的訂單",

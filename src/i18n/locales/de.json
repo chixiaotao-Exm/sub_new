@@ -9571,7 +9571,9 @@
       "alipayFallbackHint": "Versuchen Sie erneut, Alipay zu öffnen, oder speichern Sie den QR-Code und scannen Sie ihn aus Ihrem Alipay-Fotoalbum",
       "reopenAlipay": "Öffnen Sie Alipay erneut",
       "saveQRCode": "QR-Code speichern",
-      "alipaySaveAndScanHint": "Speichern Sie den QR-Code, öffnen Sie Alipay Scan und wählen Sie ihn dann aus Ihrem Fotoalbum aus"
+      "alipaySaveAndScanHint": "Speichern Sie den QR-Code, öffnen Sie Alipay Scan und wählen Sie ihn dann aus Ihrem Fotoalbum aus",
+      "scanWeappHint": "Scannen Sie den Mini-Program-Code mit WeChat oder halten Sie ihn gedrückt, um die Zahlung abzuschließen",
+      "openWeapp": "WeChat-Mini-Programm öffnen"
     },
     "orders": {
       "title": "Meine Bestellungen",

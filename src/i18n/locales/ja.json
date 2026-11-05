@@ -9571,7 +9571,9 @@
       "alipayFallbackHint": "Alipay をもう一度開いてみるか、QR コードを保存して Alipay フォト アルバムからスキャンしてください",
       "reopenAlipay": "Alipay を再度開く",
       "saveQRCode": "QRコードを保存する",
-      "alipaySaveAndScanHint": "QR コードを保存し、Alipay スキャンを開き、フォト アルバムから選択します。"
+      "alipaySaveAndScanHint": "QR コードを保存し、Alipay スキャンを開き、フォト アルバムから選択します。",
+      "scanWeappHint": "WeChatでミニプログラムコードをスキャンするか長押しして支払いを完了してください",
+      "openWeapp": "WeChatミニプログラムを開く"
     },
     "orders": {
       "title": "自分の注文",
