@@ -47,7 +47,12 @@ export default {
           900: '#202020',
           950: '#1b1b1b'
         },
-        slate: { 700: '#2a2a2a' }
+        slate: {
+          700: '#2a2a2a',
+          800: '#2a2a2a',
+          900: '#202020',
+          950: '#1b1b1b',
+        }
       },
       fontFamily: {
         sans: [

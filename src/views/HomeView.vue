@@ -610,7 +610,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
   padding: 12px 16px;
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(42, 42, 42, 0.8);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
