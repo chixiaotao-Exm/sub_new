@@ -51,7 +51,7 @@ body { font-size: 15px; }
   pointer-events: none;
   opacity: 0;
   padding: 1px;
-  background: conic-gradient(from var(--border-angle, 0deg), transparent 0deg, rgba(239, 176, 194, .90) 42deg, transparent 92deg, transparent 360deg);
+  background: conic-gradient(from var(--border-angle, 0deg), transparent 0deg, rgba(255, 79, 163, .92) 42deg, transparent 92deg, transparent 360deg);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
@@ -59,8 +59,8 @@ body { font-size: 15px; }
   transition: opacity .24s ease;
 }
 .console-content .card:hover, .console-content .kpi:hover {
-  border-color: rgba(239, 176, 194, .45);
-  box-shadow: 0 0 0 1px rgba(239, 176, 194, .10), 0 14px 36px rgba(0, 0, 0, .18);
+  border-color: rgba(255, 79, 163, .50);
+  box-shadow: 0 0 0 1px rgba(255, 79, 163, .14), 0 14px 36px rgba(0, 0, 0, .18);
 }
 .console-content .card:has(.group:hover),
 .console-content .card:has(.group:focus-within) { z-index: 1000; }
