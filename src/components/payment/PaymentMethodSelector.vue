@@ -99,6 +99,8 @@ function methodLabel(method: PaymentMethodOption): string {
 }
 
 function methodSelectedClass(): string {
-  return 'payment-method-selected'
+  // Keep the semantic primary-border class for existing selectors/tests; the
+  // shared theme replaces its paint with the black + animated-border treatment.
+  return 'payment-method-selected border-primary-500'
 }
 </script>
