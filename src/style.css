@@ -107,10 +107,10 @@
   }
 
   .btn-success {
-    @apply bg-gradient-to-r from-emerald-500 to-emerald-600;
-    @apply text-white shadow-md shadow-emerald-500/25;
-    @apply hover:from-emerald-600 hover:to-emerald-700 hover:shadow-lg hover:shadow-emerald-500/30;
-    @apply dark:shadow-emerald-500/20;
+    @apply bg-gradient-to-r from-primary-500 to-primary-600;
+    @apply text-white shadow-md shadow-primary-500/25;
+    @apply hover:from-primary-600 hover:to-primary-700 hover:shadow-lg hover:shadow-primary-500/30;
+    @apply dark:shadow-primary-500/20;
   }
 
   .btn-warning {
@@ -128,9 +128,9 @@
   }
 
   .btn-airwallex {
-    @apply bg-[#14171A] text-white shadow-md shadow-emerald-500/20;
-    @apply hover:bg-[#20252a] hover:shadow-lg hover:shadow-emerald-500/25;
-    @apply dark:bg-[#7AF0C4] dark:text-gray-950 dark:shadow-emerald-500/20;
+    @apply bg-[#14171A] text-white shadow-md shadow-primary-500/20;
+    @apply hover:bg-[#20252a] hover:shadow-lg hover:shadow-primary-500/25;
+    @apply dark:bg-primary-300 dark:text-gray-950 dark:shadow-primary-500/20;
     @apply dark:hover:bg-[#62d9ad];
   }
 
@@ -777,3 +777,4 @@
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
+

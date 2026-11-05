@@ -111,6 +111,15 @@ body { font-size: 15px; }
 .btn-primary:hover { filter: brightness(1.06); }
 .console-content button[class*="bg-green"],
 .console-content button[class*="bg-emerald"] { background-color: var(--ib-accent) !important; color: #2a1820 !important; }
+.console-content [class*="bg-green-100"],
+.console-content [class*="bg-emerald-100"],
+.console-content [class*="bg-green-50"],
+.console-content [class*="bg-emerald-50"] { background-color: var(--ib-accent-soft) !important; }
+.dark .console-content [class*="dark:bg-green-900"],
+.dark .console-content [class*="dark:bg-emerald-900"],
+.dark .console-content [class*="dark:bg-emerald-800"] { background-color: var(--ib-accent-soft) !important; }
+.console-content [class*="text-green-"],
+.console-content [class*="text-emerald-"] { color: var(--ib-accent) !important; }
 .console-content [class*="bg-emerald-100"],
 .console-content [class*="bg-emerald-50"] { background-color: var(--ib-accent-soft) !important; }
 .dark .console-content [class*="dark:bg-emerald-900"],
