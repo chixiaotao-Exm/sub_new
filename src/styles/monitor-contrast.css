@@ -1,0 +1,50 @@
+/* Quiet reference scale; the timeline remains the primary visual information. */
+.console-content .card .score-legend {
+  flex: 0 1 420px;
+  max-width: 420px;
+  min-width: 0;
+  height: 6px;
+  background: linear-gradient(90deg,
+    #985f63 0%, #a06c62 15%, #a47d59 30%, #a18b5b 45%,
+    #99905d 55%, #81916a 70%, #648b72 85%, #4f7e68 100%);
+}
+
+.console-content .matrix-row .pulse-track {
+  height: 22px !important; /* Overrides the component's inline 16px track. */
+}
+.console-content .matrix-row .pulse-cell {
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgb(26 36 48 / 18%);
+}
+.console-content .matrix-row .pulse-cell.health-unknown.has-data {
+  background: #737f8f;
+}
+.console-content .matrix-row .pulse-cell.is-empty {
+  opacity: 1;
+  background-color: #c5ccd5;
+  background-image: repeating-linear-gradient(135deg,
+    transparent 0 4px, rgb(53 68 86 / 12%) 4px 6px);
+  box-shadow: inset 0 0 0 1px #8b97a7;
+}
+.dark .console-content .matrix-row .pulse-cell {
+  box-shadow: inset 0 0 0 1px rgb(231 237 245 / 22%);
+}
+.dark .console-content .matrix-row .pulse-cell.health-unknown.has-data {
+  background: #98a2b2;
+}
+.dark .console-content .matrix-row .pulse-cell.is-empty {
+  background-color: #606d7e;
+  background-image: repeating-linear-gradient(135deg,
+    transparent 0 4px, rgb(231 237 245 / 10%) 4px 6px);
+  box-shadow: inset 0 0 0 1px #8895a6;
+}
+.console-content .matrix-row .pulse-cell:hover,
+.console-content .matrix-row .pulse-cell:focus-visible {
+  outline: 2px solid #65957f;
+  outline-offset: 1px;
+  z-index: 5;
+}
+.dark .console-content .matrix-row .pulse-cell:hover,
+.dark .console-content .matrix-row .pulse-cell:focus-visible {
+  outline-color: #9bc4b0;
+}

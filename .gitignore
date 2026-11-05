@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-root/
+*.log
+*.tmp
+*.tar.gz
+.DS_Store
+tools/__pycache__/
+tools/translation-cache/
+tools/translation-vendor/
+tools/locale-source/
+tools/*.local.json

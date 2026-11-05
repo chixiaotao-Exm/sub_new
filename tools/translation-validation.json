@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-11-05T09:27:27.078Z",
+  "sourceKeys": 8725,
+  "locales": {
+    "zh-TW": {
+      "keys": 8725,
+      "missing": [],
+      "empty": [],
+      "extra": [],
+      "placeholderErrors": [],
+      "compileErrors": [],
+      "markupErrors": [],
+      "identicalEnglishSentences": [],
+      "untranslatedLatinSentences": [],
+      "complete": true
+    },
+    "ja": {
+      "keys": 8725,
+      "missing": [],
+      "empty": [],
+      "extra": [],
+      "placeholderErrors": [],
+      "compileErrors": [],
+      "markupErrors": [],
+      "identicalEnglishSentences": [],
+      "untranslatedLatinSentences": [],
+      "complete": true
+    },
+    "ko": {
+      "keys": 8725,
+      "missing": [],
+      "empty": [],
+      "extra": [],
+      "placeholderErrors": [],
+      "compileErrors": [],
+      "markupErrors": [],
+      "identicalEnglishSentences": [],
+      "untranslatedLatinSentences": [],
+      "complete": true
+    },
+    "es": {
+      "keys": 8725,
+      "missing": [],
+      "empty": [],
+      "extra": [],
+      "placeholderErrors": [],
+      "compileErrors": [],
+      "markupErrors": [],
+      "identicalEnglishSentences": [],
+      "untranslatedLatinSentences": [],
+      "complete": true
+    },
+    "ru": {
+      "keys": 8725,
+      "missing": [],
+      "empty": [],
+      "extra": [],
+      "placeholderErrors": [],
+      "compileErrors": [],
+      "markupErrors": [],
+      "identicalEnglishSentences": [],
+      "untranslatedLatinSentences": [],
+      "complete": true
+    },
+    "fr": {
+      "keys": 8725,
+      "missing": [],
+      "empty": [],
+      "extra": [],
+      "placeholderErrors": [],
+      "compileErrors": [],
+      "markupErrors": [],
+      "identicalEnglishSentences": [],
+      "untranslatedLatinSentences": [],
+      "complete": true
+    },
+    "de": {
+      "keys": 8725,
+      "missing": [],
+      "empty": [],
+      "extra": [],
+      "placeholderErrors": [],
+      "compileErrors": [],
+      "markupErrors": [],
+      "identicalEnglishSentences": [],
+      "untranslatedLatinSentences": [],
+      "complete": true
+    },
+    "pt": {
+      "keys": 8725,
+      "missing": [],
+      "empty": [],
+      "extra": [],
+      "placeholderErrors": [],
+      "compileErrors": [],
+      "markupErrors": [],
+      "identicalEnglishSentences": [],
+      "untranslatedLatinSentences": [],
+      "complete": true
+    }
+  },
+  "complete": true
+}

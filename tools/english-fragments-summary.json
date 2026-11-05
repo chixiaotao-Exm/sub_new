@@ -1,0 +1,167 @@
+{
+  "ja": {
+    "count": 4,
+    "samples": [
+      {
+        "source": "sk-ant-mirror-xxxxxxxxxxxx",
+        "value": "sk-ant-mirror-xxxxxxxxxxxx\u30df\u30e9\u30fc-xxxxxxxxxxxx",
+        "fragment": "sk-ant-mirror-xxxxxxxxxxxx"
+      },
+      {
+        "source": "wos-session=...; __Secure-authjs.session-token.0=...",
+        "value": "wos-session=...; __Secure-authjs.session-token.0=...",
+        "fragment": "wos-session=...; __Secure-authjs.session-token.0="
+      },
+      {
+        "source": "One sessionKey per line, e.g.:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "value": "1 \u884c\u306b 1 \u3064\u306e sessionKey \u3001\u4f8b:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "fragment": "sk-ant-sid01-yyyyy"
+      },
+      {
+        "source": "sk-ant-sid01-xxxxx...",
+        "value": "sk-ant-sid01-xxxxx...",
+        "fragment": "sk-ant-sid01-xxxxx"
+      }
+    ]
+  },
+  "ko": {
+    "count": 4,
+    "samples": [
+      {
+        "source": "e.g. us-east-1, us-west-2, eu-west-1",
+        "value": "\uc608\ub97c \ub4e4\uc5b4 us-east-1, us-west-2, eu-west-1",
+        "fragment": "us-east-1, us-west-2, eu-west-1"
+      },
+      {
+        "source": "One sessionKey per line, e.g.:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "value": "\ud55c \uc904\uc5d0 \ud558\ub098\uc758 sessionKey\uc785\ub2c8\ub2e4. \uc608:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "fragment": "sk-ant-sid01-yyyyy"
+      },
+      {
+        "source": "sk-ant-sid01-xxxxx...",
+        "value": "sk-ant-sid01-xxxxx...",
+        "fragment": "sk-ant-sid01-xxxxx"
+      },
+      {
+        "source": "{'@'}example.com, *.edu.cn",
+        "value": "{'@'}example.com, *.edu.cn",
+        "fragment": "{'@'}example.com, *.edu.cn"
+      }
+    ]
+  },
+  "es": {
+    "count": 4,
+    "samples": [
+      {
+        "source": "sk-ant-mirror-xxxxxxxxxxxx",
+        "value": "sk-ant-mirror-xxxxxxxxxxxx",
+        "fragment": "sk-ant-mirror-xxxxxxxxxxxx"
+      },
+      {
+        "source": "One sessionKey per line, e.g.:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "value": "Una clave de sesi\u00f3n por l\u00ednea, por ejemplo:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "fragment": "sk-ant-sid01-yyyyy"
+      },
+      {
+        "source": "sk-ant-sid01-xxxxx...",
+        "value": "sk-ant-sid01-xxxxx...",
+        "fragment": "sk-ant-sid01-xxxxx"
+      },
+      {
+        "source": "Codex OAuth auth.json / AT Import",
+        "value": "Codex OAuth auth.json / AT Importar",
+        "fragment": "Codex OAuth auth.json / AT Import"
+      }
+    ]
+  },
+  "ru": {
+    "count": 2,
+    "samples": [
+      {
+        "source": "sk-ant-mirror-xxxxxxxxxxxx",
+        "value": "sk-ant-mirror-xxxxxxxxxxxx",
+        "fragment": "sk-ant-mirror-xxxxxxxxxxxx"
+      },
+      {
+        "source": "{'@'}example.com, *.edu.cn",
+        "value": "{'@'}example.com, *.edu.cn",
+        "fragment": "{'@'}example.com, *.edu.cn"
+      }
+    ]
+  },
+  "fr": {
+    "count": 6,
+    "samples": [
+      {
+        "source": "sk-ant-mirror-xxxxxxxxxxxx",
+        "value": "sk-ant-mirror-xxxxxxxxxxxx",
+        "fragment": "sk-ant-mirror-xxxxxxxxxxxx"
+      },
+      {
+        "source": "wos-session=...; __Secure-authjs.session-token.0=...",
+        "value": "wos-session=...; __Secure-authjs.session-token.0=...",
+        "fragment": "wos-session=...; __Secure-authjs.session-token.0="
+      },
+      {
+        "source": "e.g. us-east-1, us-west-2, eu-west-1",
+        "value": "par ex. us-east-1, us-west-2, eu-west-1",
+        "fragment": "us-east-1, us-west-2, eu-west-1"
+      },
+      {
+        "source": "One sessionKey per line, e.g.:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "value": "Une sessionKey par ligne, par exemple\u00a0:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "fragment": "sk-ant-sid01-yyyyy"
+      }
+    ]
+  },
+  "de": {
+    "count": 7,
+    "samples": [
+      {
+        "source": "sk-ant-mirror-xxxxxxxxxxxx",
+        "value": "sk-ant-mirror-xxxxxxxxxxxx",
+        "fragment": "sk-ant-mirror-xxxxxxxxxxxx"
+      },
+      {
+        "source": "wos-session=...; __Secure-authjs.session-token.0=...",
+        "value": "wos-session=...; __Secure-authjs.session-token.0=...",
+        "fragment": "wos-session=...; __Secure-authjs.session-token.0="
+      },
+      {
+        "source": "Responses / Chat Completions (Auto)",
+        "value": "Responses / Chat Completions (Auto)",
+        "fragment": "Responses / Chat Completions (Auto)"
+      },
+      {
+        "source": "e.g. us-east-1, us-west-2, eu-west-1",
+        "value": "z.B. us-east-1, us-west-2, eu-west-1",
+        "fragment": "us-east-1, us-west-2, eu-west-1"
+      }
+    ]
+  },
+  "pt": {
+    "count": 5,
+    "samples": [
+      {
+        "source": "sk-ant-mirror-xxxxxxxxxxxx",
+        "value": "sk-ant-mirror-xxxxxxxxxxxx",
+        "fragment": "sk-ant-mirror-xxxxxxxxxxxx"
+      },
+      {
+        "source": "e.g. us-east-1, us-west-2, eu-west-1",
+        "value": "por exemplo us-east-1, us-west-2, eu-west-1",
+        "fragment": "us-east-1, us-west-2, eu-west-1"
+      },
+      {
+        "source": "One sessionKey per line, e.g.:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "value": "Uma sessionKey por linha, por exemplo:\nsk-ant-sid01-xxxxx...\nsk-ant-sid01-yyyyy...",
+        "fragment": "sk-ant-sid01-yyyyy"
+      },
+      {
+        "source": "sk-ant-sid01-xxxxx...",
+        "value": "sk-ant-sid01-xxxxx...",
+        "fragment": "sk-ant-sid01-xxxxx"
+      }
+    ]
+  }
+}

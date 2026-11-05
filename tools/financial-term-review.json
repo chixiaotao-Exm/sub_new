@@ -1,0 +1,258 @@
+{
+  "zh-TW": [
+    {
+      "key": "keyUsage.walletBalance",
+      "before": "餘額",
+      "after": "錢包餘額"
+    },
+    {
+      "key": "usage.accountMultiplier",
+      "before": "計費倍率",
+      "after": "帳戶計費倍率"
+    },
+    {
+      "key": "admin.accounts.columns.billingRateMultiplier",
+      "before": "帳戶計費倍率",
+      "after": "計費倍率"
+    },
+    {
+      "key": "admin.usage.billingTypeBalance",
+      "before": "錢包餘額",
+      "after": "餘額"
+    },
+    {
+      "key": "usage.actualCost",
+      "before": "實際",
+      "after": "實際扣費"
+    },
+    {
+      "key": "usage.standardCost",
+      "before": "標準",
+      "after": "標準費用"
+    },
+    {
+      "key": "payment.status.paid",
+      "before": "已支付",
+      "after": "已付款"
+    },
+    {
+      "key": "payment.admin.rateMultiplierLabel",
+      "before": "倍率",
+      "after": "計費倍率"
+    },
+    {
+      "key": "admin.groups.rateLabel",
+      "before": "倍率",
+      "after": "計費倍率"
+    },
+    {
+      "key": "modelPlaza.filters.rateLabel",
+      "before": "倍率",
+      "after": "計費倍率"
+    }
+  ],
+  "ja": [
+    {
+      "key": "usage.actualCost",
+      "before": "実際の",
+      "after": "実際の請求額"
+    },
+    {
+      "key": "usage.standardCost",
+      "before": "標準",
+      "after": "標準費用"
+    },
+    {
+      "key": "payment.status.paid",
+      "before": "有料",
+      "after": "支払い済み"
+    },
+    {
+      "key": "payment.admin.rateMultiplierLabel",
+      "before": "料金",
+      "after": "料金倍率"
+    },
+    {
+      "key": "admin.groups.rateLabel",
+      "before": "率",
+      "after": "料金倍率"
+    },
+    {
+      "key": "modelPlaza.filters.rateLabel",
+      "before": "料金",
+      "after": "料金倍率"
+    }
+  ],
+  "ko": [
+    {
+      "key": "usage.actualCost",
+      "before": "실제",
+      "after": "실제 청구 비용"
+    },
+    {
+      "key": "usage.standardCost",
+      "before": "표준",
+      "after": "표준 비용"
+    },
+    {
+      "key": "payment.status.paid",
+      "before": "유료",
+      "after": "결제 완료"
+    },
+    {
+      "key": "payment.admin.rateMultiplierLabel",
+      "before": "요금",
+      "after": "요금 배율"
+    },
+    {
+      "key": "admin.groups.rateLabel",
+      "before": "비율",
+      "after": "요금 배율"
+    },
+    {
+      "key": "modelPlaza.filters.rateLabel",
+      "before": "요금",
+      "after": "요금 배율"
+    }
+  ],
+  "es": [
+    {
+      "key": "usage.actualCost",
+      "before": "real",
+      "after": "Costo cobrado"
+    },
+    {
+      "key": "usage.standardCost",
+      "before": "Estándar",
+      "after": "Costo estándar"
+    },
+    {
+      "key": "payment.admin.rateMultiplierLabel",
+      "before": "Tarifa",
+      "after": "Multiplicador de facturación"
+    },
+    {
+      "key": "admin.groups.rateLabel",
+      "before": "tarifa",
+      "after": "Multiplicador de facturación"
+    },
+    {
+      "key": "modelPlaza.filters.rateLabel",
+      "before": "Tarifa",
+      "after": "Multiplicador de facturación"
+    }
+  ],
+  "ru": [
+    {
+      "key": "usage.actualCost",
+      "before": "Фактический",
+      "after": "Фактически списано"
+    },
+    {
+      "key": "usage.standardCost",
+      "before": "Стандартный",
+      "after": "Стандартная стоимость"
+    },
+    {
+      "key": "payment.status.paid",
+      "before": "Платный",
+      "after": "Оплачено"
+    },
+    {
+      "key": "payment.admin.rateMultiplierLabel",
+      "before": "Оценить",
+      "after": "Множитель стоимости"
+    },
+    {
+      "key": "admin.groups.rateLabel",
+      "before": "ставка",
+      "after": "Множитель стоимости"
+    },
+    {
+      "key": "modelPlaza.filters.rateLabel",
+      "before": "Оценить",
+      "after": "Множитель стоимости"
+    }
+  ],
+  "fr": [
+    {
+      "key": "usage.actualCost",
+      "before": "Réel",
+      "after": "Coût facturé"
+    },
+    {
+      "key": "usage.standardCost",
+      "before": "Norme",
+      "after": "Coût standard"
+    },
+    {
+      "key": "payment.admin.rateMultiplierLabel",
+      "before": "Tarif",
+      "after": "Multiplicateur de facturation"
+    },
+    {
+      "key": "admin.groups.rateLabel",
+      "before": "taux",
+      "after": "Multiplicateur de facturation"
+    },
+    {
+      "key": "modelPlaza.filters.rateLabel",
+      "before": "Tarif",
+      "after": "Multiplicateur de facturation"
+    }
+  ],
+  "de": [
+    {
+      "key": "usage.actualCost",
+      "before": "Tatsächlich",
+      "after": "Tatsächlich berechnet"
+    },
+    {
+      "key": "usage.standardCost",
+      "before": "Standard",
+      "after": "Standardkosten"
+    },
+    {
+      "key": "payment.admin.rateMultiplierLabel",
+      "before": "Bewerten",
+      "after": "Abrechnungsfaktor"
+    },
+    {
+      "key": "admin.groups.rateLabel",
+      "before": "Rate",
+      "after": "Abrechnungsfaktor"
+    },
+    {
+      "key": "modelPlaza.filters.rateLabel",
+      "before": "Bewerten",
+      "after": "Abrechnungsfaktor"
+    }
+  ],
+  "pt": [
+    {
+      "key": "usage.actualCost",
+      "before": "Real",
+      "after": "Custo cobrado"
+    },
+    {
+      "key": "usage.standardCost",
+      "before": "Padrão",
+      "after": "Custo padrão"
+    },
+    {
+      "key": "payment.admin.rateMultiplierLabel",
+      "before": "Taxa",
+      "after": "Multiplicador de cobrança"
+    },
+    {
+      "key": "admin.groups.rateLabel",
+      "before": "taxa",
+      "after": "Multiplicador de cobrança"
+    },
+    {
+      "key": "modelPlaza.filters.rateLabel",
+      "before": "Taxa",
+      "after": "Multiplicador de cobrança"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{"locale": "zh-TW", "cached": 7054, "remaining_unique": 0, "batches": 0}
+{"locale": "zh-TW", "complete": true, "missing": 0, "errors": 0}
+{"locale": "ja", "cached": 7040, "remaining_unique": 0, "batches": 0}
+{"locale": "ja", "complete": true, "missing": 0, "errors": 0}
+{"locale": "ko", "cached": 7044, "remaining_unique": 0, "batches": 0}
+{"locale": "ko", "complete": true, "missing": 0, "errors": 0}
+{"locale": "es", "cached": 7040, "remaining_unique": 0, "batches": 0}
+{"locale": "es", "complete": true, "missing": 0, "errors": 0}
+{"locale": "ru", "cached": 7047, "remaining_unique": 0, "batches": 0}
+{"locale": "ru", "complete": true, "missing": 0, "errors": 0}
+{"locale": "fr", "cached": 7205, "remaining_unique": 0, "batches": 0}
+{"locale": "fr", "complete": true, "missing": 0, "errors": 0}
+{"locale": "de", "cached": 7205, "remaining_unique": 0, "batches": 0}
+{"locale": "de", "complete": true, "missing": 0, "errors": 0}
+{"locale": "pt", "cached": 7205, "remaining_unique": 0, "batches": 0}
+{"locale": "pt", "complete": true, "missing": 0, "errors": 0}
+Reviewed 51 navigation entries and 30 core actions in 8 languages

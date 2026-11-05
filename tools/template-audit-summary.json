@@ -1,0 +1,145 @@
+{
+  "count": 219,
+  "files": [
+    [
+      "components\\account\\CreateAccountModal.vue",
+      60
+    ],
+    [
+      "views\\admin\\SettingsView.vue",
+      29
+    ],
+    [
+      "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+      21
+    ],
+    [
+      "views\\HomeView.vue",
+      12
+    ],
+    [
+      "components\\account\\EditAccountModal.vue",
+      8
+    ],
+    [
+      "views\\admin\\BackupView.vue",
+      8
+    ],
+    [
+      "views\\user\\BatchImageGuideView.vue",
+      7
+    ],
+    [
+      "views\\setup\\SetupWizardView.vue",
+      5
+    ],
+    [
+      "views\\admin\\ops\\components\\OpsSystemLogTable.vue",
+      4
+    ],
+    [
+      "views\\admin\\DashboardView.vue",
+      3
+    ],
+    [
+      "views\\admin\\GroupsView.vue",
+      3
+    ],
+    [
+      "views\\admin\\ops\\components\\OpsAlertEventsCard.vue",
+      3
+    ],
+    [
+      "views\\admin\\ProxiesView.vue",
+      3
+    ],
+    [
+      "views\\admin\\RiskControlView.vue",
+      3
+    ],
+    [
+      "components\\account\\AccountUsageCell.vue",
+      2
+    ]
+  ],
+  "samples": [
+    {
+      "file": "components\\account\\CreateAccountModal.vue",
+      "line": 173,
+      "type": "text",
+      "value": "TypeSafe / Jev"
+    },
+    {
+      "file": "components\\account\\CreateAccountModal.vue",
+      "line": 936,
+      "type": "text",
+      "value": "GCP Code Assist"
+    },
+    {
+      "file": "components\\account\\CreateAccountModal.vue",
+      "line": 1296,
+      "type": "text",
+      "value": "Service Account JSON"
+    },
+    {
+      "file": "components\\account\\CreateAccountModal.vue",
+      "line": 2109,
+      "type": "text",
+      "value": "us-east-1 (N. Virginia)"
+    },
+    {
+      "file": "components\\account\\CreateAccountModal.vue",
+      "line": 2111,
+      "type": "text",
+      "value": "us-west-1 (N. California)"
+    },
+    {
+      "file": "components\\account\\CreateAccountModal.vue",
+      "line": 2113,
+      "type": "text",
+      "value": "us-gov-east-1 (GovCloud US-East)"
+    },
+    {
+      "file": "components\\account\\CreateAccountModal.vue",
+      "line": 2114,
+      "type": "text",
+      "value": "us-gov-west-1 (GovCloud US-West)"
+    },
+    {
+      "file": "components\\account\\CreateAccountModal.vue",
+      "line": 2139,
+      "type": "text",
+      "value": "sa-east-1 (São Paulo)"
+    },
+    {
+      "file": "views\\admin\\SettingsView.vue",
+      "line": 2577,
+      "type": "placeholder",
+      "value": "GitHub OAuth Client ID"
+    },
+    {
+      "file": "views\\admin\\SettingsView.vue",
+      "line": 2671,
+      "type": "placeholder",
+      "value": "Google OAuth Client ID"
+    },
+    {
+      "file": "views\\HomeView.vue",
+      "line": 252,
+      "type": "text",
+      "value": "# Routing to upstream..."
+    },
+    {
+      "file": "views\\HomeView.vue",
+      "line": 256,
+      "type": "text",
+      "value": "{ \"content\": \"Hello!\" }"
+    },
+    {
+      "file": "views\\user\\StripePaymentView.vue",
+      "line": 30,
+      "type": "alt",
+      "value": "WeChat Pay QR"
+    }
+  ]
+}

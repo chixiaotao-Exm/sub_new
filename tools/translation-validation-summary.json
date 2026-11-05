@@ -1,0 +1,102 @@
+{
+  "sourceKeys": 8725,
+  "complete": true,
+  "locales": {
+    "zh-TW": {
+      "keys": 8725,
+      "missing": 0,
+      "empty": 0,
+      "extra": 0,
+      "placeholderErrors": 0,
+      "compileErrors": 0,
+      "markupErrors": 0,
+      "identicalEnglishSentences": 0,
+      "untranslatedLatinSentences": 0,
+      "complete": true
+    },
+    "ja": {
+      "keys": 8725,
+      "missing": 0,
+      "empty": 0,
+      "extra": 0,
+      "placeholderErrors": 0,
+      "compileErrors": 0,
+      "markupErrors": 0,
+      "identicalEnglishSentences": 0,
+      "untranslatedLatinSentences": 0,
+      "complete": true
+    },
+    "ko": {
+      "keys": 8725,
+      "missing": 0,
+      "empty": 0,
+      "extra": 0,
+      "placeholderErrors": 0,
+      "compileErrors": 0,
+      "markupErrors": 0,
+      "identicalEnglishSentences": 0,
+      "untranslatedLatinSentences": 0,
+      "complete": true
+    },
+    "es": {
+      "keys": 8725,
+      "missing": 0,
+      "empty": 0,
+      "extra": 0,
+      "placeholderErrors": 0,
+      "compileErrors": 0,
+      "markupErrors": 0,
+      "identicalEnglishSentences": 0,
+      "untranslatedLatinSentences": 0,
+      "complete": true
+    },
+    "ru": {
+      "keys": 8725,
+      "missing": 0,
+      "empty": 0,
+      "extra": 0,
+      "placeholderErrors": 0,
+      "compileErrors": 0,
+      "markupErrors": 0,
+      "identicalEnglishSentences": 0,
+      "untranslatedLatinSentences": 0,
+      "complete": true
+    },
+    "fr": {
+      "keys": 8725,
+      "missing": 0,
+      "empty": 0,
+      "extra": 0,
+      "placeholderErrors": 0,
+      "compileErrors": 0,
+      "markupErrors": 0,
+      "identicalEnglishSentences": 0,
+      "untranslatedLatinSentences": 0,
+      "complete": true
+    },
+    "de": {
+      "keys": 8725,
+      "missing": 0,
+      "empty": 0,
+      "extra": 0,
+      "placeholderErrors": 0,
+      "compileErrors": 0,
+      "markupErrors": 0,
+      "identicalEnglishSentences": 0,
+      "untranslatedLatinSentences": 0,
+      "complete": true
+    },
+    "pt": {
+      "keys": 8725,
+      "missing": 0,
+      "empty": 0,
+      "extra": 0,
+      "placeholderErrors": 0,
+      "compileErrors": 0,
+      "markupErrors": 0,
+      "identicalEnglishSentences": 0,
+      "untranslatedLatinSentences": 0,
+      "complete": true
+    }
+  }
+}

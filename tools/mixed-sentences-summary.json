@@ -1,0 +1,112 @@
+{
+  "ja": {
+    "count": 0,
+    "samples": []
+  },
+  "ko": {
+    "count": 3,
+    "samples": [
+      {
+        "source": "Includes DeepSeek, Kimi, Zhipu GLM and MiniMax",
+        "value": "DeepSeek, Kimi, Zhipu GLM \ubc0f MiniMax \ud3ec\ud568",
+        "fragments": [
+          "DeepSeek, Kimi, Zhipu GLM"
+        ]
+      },
+      {
+        "source": "Use Face ID, Touch ID, Windows Hello, or a security key to sign in without a password.",
+        "value": "\ube44\ubc00\ubc88\ud638 \uc5c6\uc774 \ub85c\uadf8\uc778\ud558\ub824\uba74 Face ID, Touch ID, Windows Hello \ub610\ub294 \ubcf4\uc548 \ud0a4\ub97c \uc0ac\uc6a9\ud558\uc138\uc694.",
+        "fragments": [
+          "Face , Touch , Windows Hello"
+        ]
+      },
+      {
+        "source": "Time To First Token, measuring the speed of first token return in streaming responses.",
+        "value": "Time To First Token(\uccab \ubc88\uc9f8 \ud1a0\ud070\uae4c\uc9c0\uc758 \uc2dc\uac04), \uc2a4\ud2b8\ub9ac\ubc0d \uc751\ub2f5\uc5d0\uc11c \uccab \ubc88\uc9f8 \ud1a0\ud070 \ubc18\ud658 \uc18d\ub3c4\ub97c \uce21\uc815\ud569\ub2c8\ub2e4.",
+        "fragments": [
+          "Time To First Token"
+        ]
+      }
+    ]
+  },
+  "ru": {
+    "count": 2,
+    "samples": [
+      {
+        "source": "Includes DeepSeek, Kimi, Zhipu GLM and MiniMax",
+        "value": "\u0412\u043a\u043b\u044e\u0447\u0430\u0435\u0442 DeepSeek, Kimi, Zhipu GLM \u0438 MiniMax.",
+        "fragments": [
+          "DeepSeek, Kimi, Zhipu GLM"
+        ]
+      },
+      {
+        "source": "System One is non-streaming and is not compatible with Chat Completions, Responses, Claude Code, or Codex clients.",
+        "value": "System One \u043d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 \u043f\u043e\u0442\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0443 \u0438 \u043d\u0435\u0441\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c \u0441 \u043a\u043b\u0438\u0435\u043d\u0442\u0430\u043c\u0438 Chat Completions, Responses, Code Claude \u0438\u043b\u0438 Codex.",
+        "fragments": [
+          "Chat Completions, Responses, Code"
+        ]
+      }
+    ]
+  },
+  "zh-TW": {
+    "count": 11,
+    "samples": [
+      {
+        "source": "\u4f8b\u5982 overloaded, too many requests",
+        "value": "\u4f8b\u5982 overloaded, too many requests",
+        "fragments": [
+          "overloaded, too many requests"
+        ]
+      },
+      {
+        "source": "\u4f8b\u5982\uff1aHello from Sub2API connectivity test.",
+        "value": "\u4f8b\u5982\uff1aHello from Sub2API connectivity test.",
+        "fragments": [
+          "Hello from  connectivity test"
+        ]
+      },
+      {
+        "source": "Hello from Sub2API account connectivity test.",
+        "value": "Hello from Sub2API account connectivity test.",
+        "fragments": [
+          "Hello from  account connectivity test"
+        ]
+      },
+      {
+        "source": "AWS Secret Access Key",
+        "value": "AWS Secret Access Key",
+        "fragments": [
+          "AWS Secret Access Key"
+        ]
+      },
+      {
+        "source": "\u8bf7\u8f93\u5165 AWS Secret Access Key",
+        "value": "\u8acb\u8f38\u5165 AWS Secret Access Key",
+        "fragments": [
+          "AWS Secret Access Key"
+        ]
+      },
+      {
+        "source": "\u6bcf\u884c\u7c98\u8d34\u4e00\u4e2a Grok Web SSO key\uff0c\u7cfb\u7edf\u4f1a\u81ea\u52a8\u8d70 xAI Device Flow \u5e76\u8f6c\u6362\u4e3a Grok Build OAuth \u51ed\u636e\u3002",
+        "value": "\u6bcf\u884c\u8cbc\u4e0a\u4e00\u500b Grok Web SSO key\uff0c\u7cfb\u7d71\u6703\u81ea\u52d5\u8d70 xAI Device Flow \u4e26\u8f49\u63db\u70ba Grok Build OAuth \u6191\u8b49\u3002",
+        "fragments": [
+          "Grok Web SSO key"
+        ]
+      },
+      {
+        "source": "Grok Web SSO Key",
+        "value": "Grok Web SSO Key",
+        "fragments": [
+          "Grok Web SSO Key"
+        ]
+      },
+      {
+        "source": "Google One OAuth\uff08\u4e2a\u4eba\u7248 / Code Assist for Individuals\uff09",
+        "value": "Google One OAuth\uff08\u500b\u4eba\u7248 / Code Assist for Individuals\uff09",
+        "fragments": [
+          "Code Assist for Individuals"
+        ]
+      }
+    ]
+  }
+}

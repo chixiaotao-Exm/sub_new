@@ -1,0 +1,4 @@
+const fs=require('node:fs'),path=require('node:path'),ts=require('../node_modules/typescript');
+require.extensions['.ts']=(mod,file)=>mod._compile(ts.transpileModule(fs.readFileSync(file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,esModuleInterop:true}}).outputText,file);
+function flatten(value,prefix='',out={}){for(const [key,child] of Object.entries(value)){const name=prefix?prefix+'.'+key:key;if(child&&typeof child==='object'&&!Array.isArray(child))flatten(child,name,out);else out[name]=child}return out}
+for(const locale of ['en','zh']){const flat=flatten(require(`../src/i18n/locales/${locale}/index.ts`).default);fs.writeFileSync(path.join(__dirname,`locale-source/${locale}.json`),JSON.stringify(flat,null,2)+'\n');console.log(`${locale}: ${Object.keys(flat).length} current keys`)}

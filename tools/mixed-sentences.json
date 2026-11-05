@@ -1,0 +1,122 @@
+{
+  "ja": [],
+  "ko": [
+    {
+      "source": "Includes DeepSeek, Kimi, Zhipu GLM and MiniMax",
+      "value": "DeepSeek, Kimi, Zhipu GLM 및 MiniMax 포함",
+      "fragments": [
+        "DeepSeek, Kimi, Zhipu GLM"
+      ]
+    },
+    {
+      "source": "Use Face ID, Touch ID, Windows Hello, or a security key to sign in without a password.",
+      "value": "비밀번호 없이 로그인하려면 Face ID, Touch ID, Windows Hello 또는 보안 키를 사용하세요.",
+      "fragments": [
+        "Face , Touch , Windows Hello"
+      ]
+    },
+    {
+      "source": "Time To First Token, measuring the speed of first token return in streaming responses.",
+      "value": "Time To First Token(첫 번째 토큰까지의 시간), 스트리밍 응답에서 첫 번째 토큰 반환 속도를 측정합니다.",
+      "fragments": [
+        "Time To First Token"
+      ]
+    }
+  ],
+  "ru": [
+    {
+      "source": "Includes DeepSeek, Kimi, Zhipu GLM and MiniMax",
+      "value": "Включает DeepSeek, Kimi, Zhipu GLM и MiniMax.",
+      "fragments": [
+        "DeepSeek, Kimi, Zhipu GLM"
+      ]
+    },
+    {
+      "source": "System One is non-streaming and is not compatible with Chat Completions, Responses, Claude Code, or Codex clients.",
+      "value": "System One не поддерживает потоковую передачу и несовместим с клиентами Chat Completions, Responses, Code Claude или Codex.",
+      "fragments": [
+        "Chat Completions, Responses, Code"
+      ]
+    }
+  ],
+  "zh-TW": [
+    {
+      "source": "例如 overloaded, too many requests",
+      "value": "例如 overloaded, too many requests",
+      "fragments": [
+        "overloaded, too many requests"
+      ]
+    },
+    {
+      "source": "例如：Hello from Sub2API connectivity test.",
+      "value": "例如：Hello from Sub2API connectivity test.",
+      "fragments": [
+        "Hello from  connectivity test"
+      ]
+    },
+    {
+      "source": "Hello from Sub2API account connectivity test.",
+      "value": "Hello from Sub2API account connectivity test.",
+      "fragments": [
+        "Hello from  account connectivity test"
+      ]
+    },
+    {
+      "source": "AWS Secret Access Key",
+      "value": "AWS Secret Access Key",
+      "fragments": [
+        "AWS Secret Access Key"
+      ]
+    },
+    {
+      "source": "请输入 AWS Secret Access Key",
+      "value": "請輸入 AWS Secret Access Key",
+      "fragments": [
+        "AWS Secret Access Key"
+      ]
+    },
+    {
+      "source": "每行粘贴一个 Grok Web SSO key，系统会自动走 xAI Device Flow 并转换为 Grok Build OAuth 凭据。",
+      "value": "每行貼上一個 Grok Web SSO key，系統會自動走 xAI Device Flow 並轉換為 Grok Build OAuth 憑證。",
+      "fragments": [
+        "Grok Web SSO key"
+      ]
+    },
+    {
+      "source": "Grok Web SSO Key",
+      "value": "Grok Web SSO Key",
+      "fragments": [
+        "Grok Web SSO Key"
+      ]
+    },
+    {
+      "source": "Google One OAuth（个人版 / Code Assist for Individuals）",
+      "value": "Google One OAuth（個人版 / Code Assist for Individuals）",
+      "fragments": [
+        "Code Assist for Individuals"
+      ]
+    },
+    {
+      "source": "Generate a cute orange cat astronaut sticker on a clean pastel background.",
+      "value": "Generate a cute orange cat astronaut sticker on a clean pastel background.",
+      "fragments": [
+        "cute orange cat astronaut sticker on"
+      ]
+    },
+    {
+      "source": "A red ball bouncing once on a white floor, short simple motion.",
+      "value": "A red ball bouncing once on a white floor, short simple motion.",
+      "fragments": [
+        "red ball bouncing once on",
+        "white floor, short simple motion"
+      ]
+    },
+    {
+      "source": "首 Token 延迟（Time To First Token），衡量流式响应的首 Token 返回速度。",
+      "value": "首 Token 延遲（Time To First Token），衡量串流回應的首 Token 返回速度。",
+      "fragments": [
+        "Time To First Token"
+      ]
+    }
+  ]
+}

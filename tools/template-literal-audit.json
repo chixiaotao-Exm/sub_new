@@ -1,0 +1,1316 @@
+[
+  {
+    "file": "components\\account\\AccountTestModal.vue",
+    "line": 172,
+    "type": "alt",
+    "value": "preview"
+  },
+  {
+    "file": "components\\account\\AccountUsageCell.vue",
+    "line": 532,
+    "type": "text",
+    "value": "req"
+  },
+  {
+    "file": "components\\account\\AccountUsageCell.vue",
+    "line": 643,
+    "type": "text",
+    "value": "req"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 84,
+    "type": "text",
+    "value": "Anthropic"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 109,
+    "type": "text",
+    "value": "OpenAI"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 134,
+    "type": "text",
+    "value": "Gemini"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 147,
+    "type": "text",
+    "value": "Antigravity"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 160,
+    "type": "text",
+    "value": "Grok"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 173,
+    "type": "text",
+    "value": "TypeSafe / Jev"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 189,
+    "type": "text",
+    "value": "Kimi"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 202,
+    "type": "text",
+    "value": "Zhipu GLM"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 215,
+    "type": "text",
+    "value": "DeepSeek"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 228,
+    "type": "text",
+    "value": "MiniMax"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 246,
+    "type": "text",
+    "value": "OpenCode"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 424,
+    "type": "text",
+    "value": "OAuth"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 450,
+    "type": "text",
+    "value": "API Key"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 483,
+    "type": "text",
+    "value": "OAuth"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 510,
+    "type": "text",
+    "value": "API Key"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 893,
+    "type": "text",
+    "value": "Google One"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 936,
+    "type": "text",
+    "value": "GCP Code Assist"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1132,
+    "type": "text",
+    "value": "OAuth"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1158,
+    "type": "text",
+    "value": "API Key"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1186,
+    "type": "placeholder",
+    "value": "https://cloudcode-pa.googleapis.com"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1197,
+    "type": "placeholder",
+    "value": "sk-..."
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1246,
+    "type": "text",
+    "value": "API Key"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1258,
+    "type": "text",
+    "value": "Project ID"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1269,
+    "type": "text",
+    "value": "Location"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1296,
+    "type": "text",
+    "value": "Service Account JSON"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1339,
+    "type": "text",
+    "value": "Project ID:"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1340,
+    "type": "text",
+    "value": "Client Email:"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1348,
+    "type": "text",
+    "value": "Project ID"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 1358,
+    "type": "text",
+    "value": "Location"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2070,
+    "type": "placeholder",
+    "value": "AKIA..."
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2109,
+    "type": "text",
+    "value": "us-east-1 (N. Virginia)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2110,
+    "type": "text",
+    "value": "us-east-2 (Ohio)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2111,
+    "type": "text",
+    "value": "us-west-1 (N. California)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2112,
+    "type": "text",
+    "value": "us-west-2 (Oregon)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2113,
+    "type": "text",
+    "value": "us-gov-east-1 (GovCloud US-East)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2114,
+    "type": "text",
+    "value": "us-gov-west-1 (GovCloud US-West)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2117,
+    "type": "text",
+    "value": "eu-west-1 (Ireland)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2118,
+    "type": "text",
+    "value": "eu-west-2 (London)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2119,
+    "type": "text",
+    "value": "eu-west-3 (Paris)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2120,
+    "type": "text",
+    "value": "eu-central-1 (Frankfurt)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2121,
+    "type": "text",
+    "value": "eu-central-2 (Zurich)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2122,
+    "type": "text",
+    "value": "eu-south-1 (Milan)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2123,
+    "type": "text",
+    "value": "eu-south-2 (Spain)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2124,
+    "type": "text",
+    "value": "eu-north-1 (Stockholm)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2127,
+    "type": "text",
+    "value": "ap-northeast-1 (Tokyo)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2128,
+    "type": "text",
+    "value": "ap-northeast-2 (Seoul)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2129,
+    "type": "text",
+    "value": "ap-northeast-3 (Osaka)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2130,
+    "type": "text",
+    "value": "ap-south-1 (Mumbai)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2131,
+    "type": "text",
+    "value": "ap-south-2 (Hyderabad)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2132,
+    "type": "text",
+    "value": "ap-southeast-1 (Singapore)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2133,
+    "type": "text",
+    "value": "ap-southeast-2 (Sydney)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2136,
+    "type": "text",
+    "value": "ca-central-1 (Canada)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 2139,
+    "type": "text",
+    "value": "sa-east-1 (São Paulo)"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 3984,
+    "type": "text",
+    "value": "Free"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 3991,
+    "type": "text",
+    "value": "Pro"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 3998,
+    "type": "text",
+    "value": "Ultra"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 4007,
+    "type": "text",
+    "value": "Standard"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 4014,
+    "type": "text",
+    "value": "Enterprise"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 4023,
+    "type": "text",
+    "value": "Free"
+  },
+  {
+    "file": "components\\account\\CreateAccountModal.vue",
+    "line": 4030,
+    "type": "text",
+    "value": "Paid"
+  },
+  {
+    "file": "components\\account\\EditAccountModal.vue",
+    "line": 1094,
+    "type": "placeholder",
+    "value": "https://cloudcode-pa.googleapis.com"
+  },
+  {
+    "file": "components\\account\\EditAccountModal.vue",
+    "line": 1104,
+    "type": "placeholder",
+    "value": "sk-..."
+  },
+  {
+    "file": "components\\account\\EditAccountModal.vue",
+    "line": 1113,
+    "type": "text",
+    "value": "API Key"
+  },
+  {
+    "file": "components\\account\\EditAccountModal.vue",
+    "line": 1125,
+    "type": "text",
+    "value": "Project ID"
+  },
+  {
+    "file": "components\\account\\EditAccountModal.vue",
+    "line": 1136,
+    "type": "text",
+    "value": "Project ID"
+  },
+  {
+    "file": "components\\account\\EditAccountModal.vue",
+    "line": 1147,
+    "type": "text",
+    "value": "Location"
+  },
+  {
+    "file": "components\\account\\EditAccountModal.vue",
+    "line": 1357,
+    "type": "placeholder",
+    "value": "AKIA..."
+  },
+  {
+    "file": "components\\account\\EditAccountModal.vue",
+    "line": 1401,
+    "type": "placeholder",
+    "value": "us-east-1"
+  },
+  {
+    "file": "components\\account\\OAuthAuthorizationFlow.vue",
+    "line": 156,
+    "type": "text",
+    "value": "Refresh Token"
+  },
+  {
+    "file": "components\\account\\OAuthAuthorizationFlow.vue",
+    "line": 744,
+    "type": "title",
+    "value": "Copy URL"
+  },
+  {
+    "file": "components\\account\\OpenAIReferralCell.vue",
+    "line": 67,
+    "type": "placeholder",
+    "value": "friend@example.com"
+  },
+  {
+    "file": "components\\account\\UsageProgressBar.vue",
+    "line": 10,
+    "type": "text",
+    "value": "req"
+  },
+  {
+    "file": "components\\admin\\account\\ImportDataModal.vue",
+    "line": 35,
+    "type": "text",
+    "value": "JSON (.json)"
+  },
+  {
+    "file": "components\\admin\\account\\ScheduledTestsPanel.vue",
+    "line": 393,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "components\\admin\\announcements\\AnnouncementTargetingEditor.vue",
+    "line": 41,
+    "type": "text",
+    "value": "OR"
+  },
+  {
+    "file": "components\\admin\\announcements\\AnnouncementTargetingEditor.vue",
+    "line": 71,
+    "type": "text",
+    "value": "AND ("
+  },
+  {
+    "file": "components\\admin\\channel\\PricingEntryCard.vue",
+    "line": 107,
+    "type": "text",
+    "value": "$/MTok"
+  },
+  {
+    "file": "components\\admin\\channel\\PricingEntryCard.vue",
+    "line": 165,
+    "type": "text",
+    "value": "(min, max]"
+  },
+  {
+    "file": "components\\admin\\channel\\TimePricingSection.vue",
+    "line": 65,
+    "type": "placeholder",
+    "value": "HH:mm:ss"
+  },
+  {
+    "file": "components\\admin\\channel\\TimePricingSection.vue",
+    "line": 82,
+    "type": "placeholder",
+    "value": "HH:mm:ss"
+  },
+  {
+    "file": "components\\admin\\group\\GroupRateMultipliersModal.vue",
+    "line": 134,
+    "type": "text",
+    "value": "ID"
+  },
+  {
+    "file": "components\\admin\\group\\GroupRPMOverridesModal.vue",
+    "line": 110,
+    "type": "text",
+    "value": "ID"
+  },
+  {
+    "file": "components\\admin\\monitor\\MonitorRunResultDialog.vue",
+    "line": 26,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "components\\admin\\proxy\\ImportDataModal.vue",
+    "line": 28,
+    "type": "text",
+    "value": "JSON (.json)"
+  },
+  {
+    "file": "components\\admin\\settings\\AdminAccessKeysSettings.vue",
+    "line": 42,
+    "type": "placeholder",
+    "value": "192.0.2.1\n2001:db8::/32"
+  },
+  {
+    "file": "components\\common\\HelpTooltip.vue",
+    "line": 147,
+    "type": "aria-label",
+    "value": "Close"
+  },
+  {
+    "file": "components\\common\\NavigationProgress.vue",
+    "line": 21,
+    "type": "aria-label",
+    "value": "Loading"
+  },
+  {
+    "file": "components\\common\\Pagination.vue",
+    "line": 73,
+    "type": "aria-label",
+    "value": "Pagination"
+  },
+  {
+    "file": "components\\common\\ProxySelector.vue",
+    "line": 105,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "components\\common\\Toast.vue",
+    "line": 59,
+    "type": "aria-label",
+    "value": "Close notification"
+  },
+  {
+    "file": "components\\keys\\UseKeyModal.vue",
+    "line": 33,
+    "type": "aria-label",
+    "value": "Client"
+  },
+  {
+    "file": "components\\keys\\UseKeyModal.vue",
+    "line": 115,
+    "type": "aria-label",
+    "value": "Tabs"
+  },
+  {
+    "file": "components\\layout\\AuthLayout.vue",
+    "line": 36,
+    "type": "alt",
+    "value": "Logo"
+  },
+  {
+    "file": "components\\modelPlaza\\PlazaNavBar.vue",
+    "line": 12,
+    "type": "alt",
+    "value": "Logo"
+  },
+  {
+    "file": "components\\payment\\PaymentProviderDialog.vue",
+    "line": 95,
+    "type": "placeholder",
+    "value": "credit_card"
+  },
+  {
+    "file": "components\\payment\\PaymentProviderDialog.vue",
+    "line": 99,
+    "type": "placeholder",
+    "value": "credit_card"
+  },
+  {
+    "file": "components\\user\\dashboard\\UserDashboardRecentUsage.vue",
+    "line": 30,
+    "type": "text",
+    "value": "tokens"
+  },
+  {
+    "file": "components\\user\\dashboard\\UserDashboardStats.vue",
+    "line": 110,
+    "type": "text",
+    "value": "RPM"
+  },
+  {
+    "file": "components\\user\\dashboard\\UserDashboardStats.vue",
+    "line": 114,
+    "type": "text",
+    "value": "TPM"
+  },
+  {
+    "file": "components\\user\\profile\\TotpSetupModal.vue",
+    "line": 86,
+    "type": "alt",
+    "value": "QR Code"
+  },
+  {
+    "file": "features\\channel-monitor-v2\\MonitorSettingsPanel.vue",
+    "line": 71,
+    "type": "text",
+    "value": "1 min"
+  },
+  {
+    "file": "features\\channel-monitor-v2\\MonitorSettingsPanel.vue",
+    "line": 79,
+    "type": "text",
+    "value": "5 min"
+  },
+  {
+    "file": "features\\prompt-audit\\components\\EndpointPool.vue",
+    "line": 64,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "features\\prompt-audit\\components\\EndpointPool.vue",
+    "line": 65,
+    "type": "text",
+    "value": "chars"
+  },
+  {
+    "file": "features\\prompt-audit\\components\\EventDetailDialog.vue",
+    "line": 69,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "features\\prompt-audit\\components\\FilterDeleteDialog.vue",
+    "line": 83,
+    "type": "text",
+    "value": "Filter SHA-256"
+  },
+  {
+    "file": "features\\prompt-audit\\components\\PolicyPanel.vue",
+    "line": 67,
+    "type": "text",
+    "value": "priority ·"
+  },
+  {
+    "file": "features\\prompt-audit\\components\\RuntimeOverview.vue",
+    "line": 65,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\AuditLogView.vue",
+    "line": 122,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\AuditLogView.vue",
+    "line": 202,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\BackupView.vue",
+    "line": 12,
+    "type": "text",
+    "value": "Cloudflare R2"
+  },
+  {
+    "file": "views\\admin\\BackupView.vue",
+    "line": 20,
+    "type": "placeholder",
+    "value": "https://<account_id>.r2.cloudflarestorage.com"
+  },
+  {
+    "file": "views\\admin\\BackupView.vue",
+    "line": 24,
+    "type": "placeholder",
+    "value": "auto"
+  },
+  {
+    "file": "views\\admin\\BackupView.vue",
+    "line": 32,
+    "type": "placeholder",
+    "value": "backups/"
+  },
+  {
+    "file": "views\\admin\\BackupView.vue",
+    "line": 86,
+    "type": "placeholder",
+    "value": "images/"
+  },
+  {
+    "file": "views\\admin\\BackupView.vue",
+    "line": 92,
+    "type": "placeholder",
+    "value": "https://<account_id>.r2.cloudflarestorage.com"
+  },
+  {
+    "file": "views\\admin\\BackupView.vue",
+    "line": 96,
+    "type": "placeholder",
+    "value": "auto"
+  },
+  {
+    "file": "views\\admin\\BackupView.vue",
+    "line": 207,
+    "type": "text",
+    "value": "ID"
+  },
+  {
+    "file": "views\\admin\\DashboardView.vue",
+    "line": 186,
+    "type": "text",
+    "value": "RPM"
+  },
+  {
+    "file": "views\\admin\\DashboardView.vue",
+    "line": 192,
+    "type": "text",
+    "value": "TPM"
+  },
+  {
+    "file": "views\\admin\\DashboardView.vue",
+    "line": 322,
+    "type": "text",
+    "value": "(Top 12)"
+  },
+  {
+    "file": "views\\admin\\GroupsView.vue",
+    "line": 4080,
+    "type": "placeholder",
+    "value": "openrouter/gpt-5"
+  },
+  {
+    "file": "views\\admin\\GroupsView.vue",
+    "line": 4137,
+    "type": "placeholder",
+    "value": "gpt-5"
+  },
+  {
+    "file": "views\\admin\\GroupsView.vue",
+    "line": 4189,
+    "type": "placeholder",
+    "value": "openrouter/gpt-5"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsAlertEventsCard.vue",
+    "line": 650,
+    "type": "text",
+    "value": "platform="
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsAlertEventsCard.vue",
+    "line": 651,
+    "type": "text",
+    "value": "group_id="
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsAlertEventsCard.vue",
+    "line": 652,
+    "type": "text",
+    "value": "region="
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1141,
+    "type": "text",
+    "value": "QPS"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1158,
+    "type": "text",
+    "value": "QPS"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1173,
+    "type": "text",
+    "value": "QPS"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1299,
+    "type": "text",
+    "value": "ms (P99)"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1305,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1310,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1315,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1320,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1325,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1334,
+    "type": "text",
+    "value": "TTFT"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1350,
+    "type": "text",
+    "value": "ms (P99)"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1356,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1361,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1366,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1371,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1376,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1441,
+    "type": "text",
+    "value": "tok/s (P50)"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1447,
+    "type": "text",
+    "value": "tok/s"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1463,
+    "type": "text",
+    "value": "CPU"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1512,
+    "type": "text",
+    "value": "Redis"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsDashboardHeader.vue",
+    "line": 1581,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsSystemLogTable.vue",
+    "line": 504,
+    "type": "text",
+    "value": "request_id"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsSystemLogTable.vue",
+    "line": 508,
+    "type": "text",
+    "value": "client_request_id"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsSystemLogTable.vue",
+    "line": 512,
+    "type": "text",
+    "value": "user_id"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsSystemLogTable.vue",
+    "line": 520,
+    "type": "text",
+    "value": "account_id"
+  },
+  {
+    "file": "views\\admin\\ops\\components\\OpsThroughputTrendChart.vue",
+    "line": 192,
+    "type": "text",
+    "value": "QPS"
+  },
+  {
+    "file": "views\\admin\\ProxiesView.vue",
+    "line": 231,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\ProxiesView.vue",
+    "line": 886,
+    "type": "text",
+    "value": "HTTP"
+  },
+  {
+    "file": "views\\admin\\ProxiesView.vue",
+    "line": 903,
+    "type": "text",
+    "value": "(cf-ray:"
+  },
+  {
+    "file": "views\\admin\\RiskControlView.vue",
+    "line": 141,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\RiskControlView.vue",
+    "line": 145,
+    "type": "text",
+    "value": "ms"
+  },
+  {
+    "file": "views\\admin\\RiskControlView.vue",
+    "line": 312,
+    "type": "text",
+    "value": "UID"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2097,
+    "type": "placeholder",
+    "value": "0x4AAAAAAA..."
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2121,
+    "type": "placeholder",
+    "value": "0x4AAAAAAA..."
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2333,
+    "type": "placeholder",
+    "value": "14xxxxx"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2350,
+    "type": "placeholder",
+    "value": "1cxxxxxx"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2366,
+    "type": "placeholder",
+    "value": "LTAI..."
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2540,
+    "type": "text",
+    "value": "GitHub"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2565,
+    "type": "text",
+    "value": "OAuth Apps"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2572,
+    "type": "text",
+    "value": "Client ID"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2577,
+    "type": "placeholder",
+    "value": "GitHub OAuth Client ID"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2581,
+    "type": "text",
+    "value": "Client Secret"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2603,
+    "type": "placeholder",
+    "value": "https://your-domain.com/api/v1/auth/oauth/github/callback"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2630,
+    "type": "placeholder",
+    "value": "/auth/oauth/callback"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2639,
+    "type": "text",
+    "value": "Google"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2666,
+    "type": "text",
+    "value": "Client ID"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2671,
+    "type": "placeholder",
+    "value": "Google OAuth Client ID"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2675,
+    "type": "text",
+    "value": "Client Secret"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2697,
+    "type": "placeholder",
+    "value": "https://your-domain.com/api/v1/auth/oauth/google/callback"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 2724,
+    "type": "placeholder",
+    "value": "/auth/oauth/callback"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 3246,
+    "type": "placeholder",
+    "value": "dingtalk_name"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 3292,
+    "type": "placeholder",
+    "value": "dingtalk_email"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 3338,
+    "type": "placeholder",
+    "value": "dingtalk_department"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 3634,
+    "type": "text",
+    "value": "client_secret_post"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 3637,
+    "type": "text",
+    "value": "client_secret_basic"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 3640,
+    "type": "text",
+    "value": "none"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 5253,
+    "type": "placeholder",
+    "value": "grok-4.5"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 7080,
+    "type": "text",
+    "value": "/legal/"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 7087,
+    "type": "placeholder",
+    "value": "usage-policy"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 7926,
+    "type": "placeholder",
+    "value": "Sub2API"
+  },
+  {
+    "file": "views\\admin\\SettingsView.vue",
+    "line": 7937,
+    "type": "placeholder",
+    "value": "CNY"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 26,
+    "type": "alt",
+    "value": "Logo"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 74,
+    "type": "alt",
+    "value": "Logo"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 123,
+    "type": "alt",
+    "value": "Logo"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 241,
+    "type": "text",
+    "value": "terminal"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 247,
+    "type": "text",
+    "value": "curl"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 248,
+    "type": "text",
+    "value": "-X POST"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 249,
+    "type": "text",
+    "value": "/v1/messages"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 252,
+    "type": "text",
+    "value": "# Routing to upstream..."
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 255,
+    "type": "text",
+    "value": "200 OK"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 256,
+    "type": "text",
+    "value": "{ \"content\": \"Hello!\" }"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 409,
+    "type": "text",
+    "value": "GPT"
+  },
+  {
+    "file": "views\\HomeView.vue",
+    "line": 487,
+    "type": "text",
+    "value": "GitHub"
+  },
+  {
+    "file": "views\\KeyUsageView.vue",
+    "line": 8,
+    "type": "alt",
+    "value": "Logo"
+  },
+  {
+    "file": "views\\KeyUsageView.vue",
+    "line": 412,
+    "type": "text",
+    "value": "GitHub"
+  },
+  {
+    "file": "views\\public\\LegalDocumentView.vue",
+    "line": 8,
+    "type": "alt",
+    "value": "Logo"
+  },
+  {
+    "file": "views\\setup\\SetupWizardView.vue",
+    "line": 80,
+    "type": "placeholder",
+    "value": "localhost"
+  },
+  {
+    "file": "views\\setup\\SetupWizardView.vue",
+    "line": 113,
+    "type": "placeholder",
+    "value": "postgres"
+  },
+  {
+    "file": "views\\setup\\SetupWizardView.vue",
+    "line": 134,
+    "type": "placeholder",
+    "value": "sub2api"
+  },
+  {
+    "file": "views\\setup\\SetupWizardView.vue",
+    "line": 205,
+    "type": "placeholder",
+    "value": "localhost"
+  },
+  {
+    "file": "views\\setup\\SetupWizardView.vue",
+    "line": 320,
+    "type": "placeholder",
+    "value": "admin@example.com"
+  },
+  {
+    "file": "views\\user\\BatchImageGuideView.vue",
+    "line": 391,
+    "type": "text",
+    "value": "Custom ID"
+  },
+  {
+    "file": "views\\user\\BatchImageGuideView.vue",
+    "line": 392,
+    "type": "text",
+    "value": "Prompt"
+  },
+  {
+    "file": "views\\user\\BatchImageGuideView.vue",
+    "line": 555,
+    "type": "text",
+    "value": "API Key"
+  },
+  {
+    "file": "views\\user\\BatchImageGuideView.vue",
+    "line": 595,
+    "type": "text",
+    "value": "PNG"
+  },
+  {
+    "file": "views\\user\\BatchImageGuideView.vue",
+    "line": 596,
+    "type": "text",
+    "value": "JPEG"
+  },
+  {
+    "file": "views\\user\\BatchImageGuideView.vue",
+    "line": 597,
+    "type": "text",
+    "value": "WebP"
+  },
+  {
+    "file": "views\\user\\BatchImageGuideView.vue",
+    "line": 611,
+    "type": "text",
+    "value": "Prompt"
+  },
+  {
+    "file": "views\\user\\StripePaymentView.vue",
+    "line": 30,
+    "type": "alt",
+    "value": "WeChat Pay QR"
+  }
+]

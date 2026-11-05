@@ -1,0 +1,178 @@
+{
+  "zh-TW": [
+    {
+      "key": "home.dashboard",
+      "before": "主機",
+      "after": "儀表板"
+    },
+    {
+      "key": "common.collapse",
+      "before": "收起",
+      "after": "收合"
+    },
+    {
+      "key": "nav.dashboard",
+      "before": "儀錶板",
+      "after": "儀表板"
+    },
+    {
+      "key": "nav.accounts",
+      "before": "帳號管理",
+      "after": "帳號"
+    },
+    {
+      "key": "nav.proxies",
+      "before": "IP管理",
+      "after": "代理伺服器"
+    },
+    {
+      "key": "nav.orderManagement",
+      "before": "訂單管理",
+      "after": "訂單"
+    },
+    {
+      "key": "admin.users.apiKeys",
+      "before": "API金鑰",
+      "after": "API 金鑰"
+    },
+    {
+      "key": "admin.groups.columns.apiKeys",
+      "before": "API 金鑰數",
+      "after": "API 金鑰"
+    },
+    {
+      "key": "admin.groups.columns.accounts",
+      "before": "帳號數",
+      "after": "帳號"
+    },
+    {
+      "key": "admin.riskControl.apiKeys",
+      "before": "API Keys",
+      "after": "API 金鑰"
+    }
+  ],
+  "ja": [
+    {
+      "key": "common.collapse",
+      "before": "崩壊する",
+      "after": "折りたたむ"
+    },
+    {
+      "key": "nav.myOrders",
+      "before": "私の注文",
+      "after": "自分の注文"
+    }
+  ],
+  "ko": [
+    {
+      "key": "keys.endpoints.title",
+      "before": "API 끝점",
+      "after": "API 엔드포인트"
+    }
+  ],
+  "es": [
+    {
+      "key": "common.collapse",
+      "before": "Colapso",
+      "after": "Contraer"
+    },
+    {
+      "key": "nav.apiKeys",
+      "before": "API claves",
+      "after": "Claves API"
+    },
+    {
+      "key": "nav.proxies",
+      "before": "apoderados",
+      "after": "Proxies"
+    },
+    {
+      "key": "nav.orderManagement",
+      "before": "Órdenes",
+      "after": "Pedidos"
+    },
+    {
+      "key": "keys.endpoints.title",
+      "before": "API Puntos finales",
+      "after": "Endpoints de API"
+    }
+  ],
+  "ru": [
+    {
+      "key": "home.dashboard",
+      "before": "Панель управления",
+      "after": "Обзор"
+    },
+    {
+      "key": "nav.apiKeys",
+      "before": "API Ключи",
+      "after": "Ключи API"
+    },
+    {
+      "key": "nav.accounts",
+      "before": "Счета",
+      "after": "Аккаунты"
+    },
+    {
+      "key": "keys.endpoints.title",
+      "before": "API Конечные точки",
+      "after": "Конечные точки API"
+    }
+  ],
+  "fr": [
+    {
+      "key": "common.collapse",
+      "before": "Réduire",
+      "after": "Replier"
+    },
+    {
+      "key": "nav.proxies",
+      "before": "Procurations",
+      "after": "Proxys"
+    },
+    {
+      "key": "keys.endpoints.title",
+      "before": "API Points de terminaison",
+      "after": "Points de terminaison API"
+    }
+  ],
+  "de": [
+    {
+      "key": "home.dashboard",
+      "before": "Armaturenbrett",
+      "after": "Übersicht"
+    },
+    {
+      "key": "common.collapse",
+      "before": "Zusammenbruch",
+      "after": "Einklappen"
+    },
+    {
+      "key": "nav.apiKeys",
+      "before": "API Schlüssel",
+      "after": "API-Schlüssel"
+    },
+    {
+      "key": "nav.myOrders",
+      "before": "Meine Befehle",
+      "after": "Meine Bestellungen"
+    },
+    {
+      "key": "keys.endpoints.title",
+      "before": "API Endpunkte",
+      "after": "API-Endpunkte"
+    }
+  ],
+  "pt": [
+    {
+      "key": "nav.apiKeys",
+      "before": "API Chaves",
+      "after": "Chaves de API"
+    },
+    {
+      "key": "keys.endpoints.title",
+      "before": "API Pontos finais",
+      "after": "Endpoints de API"
+    }
+  ]
+}
