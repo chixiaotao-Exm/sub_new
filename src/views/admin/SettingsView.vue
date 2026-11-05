@@ -13269,7 +13269,7 @@ watch(
   @apply sticky z-20 -mx-1 rounded-2xl border border-white/80 bg-white/90 p-1.5 backdrop-blur-xl;
   top: 4.75rem;
   box-shadow:
-    0 12px 28px rgb(15 23 42 / 0.07),
+    0 12px 28px rgb(32 32 32 / 0.07),
     0 1px 0 rgb(255 255 255 / 0.9) inset;
 }
 
@@ -13323,7 +13323,7 @@ watch(
 .settings-tab-active {
   @apply border-primary-200/80 bg-white text-primary-700 shadow-sm dark:border-primary-400/30 dark:bg-dark-700/95 dark:text-primary-200;
   box-shadow:
-    0 8px 18px rgb(15 23 42 / 0.08),
+    0 8px 18px rgb(32 32 32 / 0.08),
     0 1px 0 rgb(255 255 255 / 0.92) inset;
 }
 
@@ -13366,7 +13366,7 @@ watch(
    rules in the production build, leaving inactive tabs unreadable on dark. */
 .dark .settings-tabs-shell {
   border-color: rgb(42 42 42 / 0.65);
-  background: rgb(15 23 42 / 0.86);
+  background: rgb(32 32 32 / 0.86);
   box-shadow:
     0 16px 36px rgb(0 0 0 / 0.28),
     0 1px 0 rgb(255 255 255 / 0.06) inset;
@@ -13382,4 +13382,5 @@ watch(
     0 1px 0 rgb(255 255 255 / 0.08) inset;
 }
 </style>
+
 
