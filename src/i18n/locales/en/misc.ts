@@ -337,6 +337,8 @@ export default {
       scanWxpay: 'WeChat QR Payment',
       scanAlipayHint: 'Open Alipay on your phone and scan the QR code to pay',
       scanWxpayHint: 'Open WeChat on your phone and scan the QR code to pay',
+      scanWeappHint: 'Scan the mini program code with WeChat, or long-press it, to complete payment',
+      openWeapp: 'Open WeChat mini program',
       payInNewWindow: 'Complete Payment in New Window',
       payInNewWindowHint: 'The payment page has opened in a new window. Please complete the payment there and return to this page.',
       openPayWindow: 'Reopen Payment Page',

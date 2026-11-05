@@ -3,13 +3,31 @@
     <!-- QR Code + Polling State -->
     <div v-if="!success" class="flex flex-col items-center space-y-4">
       <!-- QR Code mode -->
-      <template v-if="qrUrl">
-        <div class="rounded-2xl bg-white p-4 shadow-sm dark:bg-dark-800">
-          <canvas ref="qrCanvas" class="mx-auto"></canvas>
-        </div>
-        <p v-if="scanHint" class="text-center text-sm text-gray-500 dark:text-gray-400">
-          {{ scanHint }}
-        </p>
+      <template v-if="qrUrl || (useWeapp && weappImg)">
+        <template v-if="useWeapp && weappImg">
+          <div class="rounded-2xl bg-white p-4 shadow-sm dark:bg-dark-800">
+            <img :src="weappImg" alt="WeChat mini program QR" class="mx-auto block h-[220px] w-[220px]" />
+          </div>
+          <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+            {{ t('payment.qr.scanWeappHint') }}
+          </p>
+          <button
+            v-if="weappScheme && !isWeChatBrowser"
+            class="btn btn-primary w-full"
+            type="button"
+            @click="openWeapp"
+          >
+            {{ t('payment.qr.openWeapp') }}
+          </button>
+        </template>
+        <template v-else>
+          <div class="rounded-2xl bg-white p-4 shadow-sm dark:bg-dark-800">
+            <canvas ref="qrCanvas" class="mx-auto"></canvas>
+          </div>
+          <p v-if="scanHint" class="text-center text-sm text-gray-500 dark:text-gray-400">
+            {{ scanHint }}
+          </p>
+        </template>
       </template>
       <!-- Popup window waiting mode (no QR code) -->
       <template v-else>
@@ -78,6 +96,7 @@ import Icon from '@/components/icons/Icon.vue'
 import { usePaymentStore } from '@/stores/payment'
 import { useAppStore } from '@/stores'
 import { paymentAPI } from '@/api/payment'
+import { apiClient } from '@/api/client'
 import { extractI18nErrorMessage } from '@/utils/apiError'
 import { getPaymentPopupFeatures, isBuiltInAlipayMethod, isBuiltInWxpayMethod } from '@/components/payment/providerConfig'
 import type { PaymentOrder } from '@/types/payment'
@@ -107,6 +126,14 @@ const appStore = useAppStore()
 
 const qrCanvas = ref<HTMLCanvasElement | null>(null)
 const qrUrl = ref('')
+const weappImg = ref('')
+const weappScheme = ref('')
+const isWeChatBrowser = /micromessenger/i.test(
+  typeof navigator !== 'undefined' ? navigator.userAgent : ''
+)
+const isMobileUA = /android|iphone|ipad|ipod|mobile|harmony/i.test(
+  typeof navigator !== 'undefined' ? navigator.userAgent : ''
+)
 const remainingSeconds = ref(0)
 const expired = ref(false)
 const cancelling = ref(false)
@@ -124,6 +151,8 @@ const VERIFY_RETRY_MAX_ATTEMPTS = 6
 
 const isAlipay = computed(() => isBuiltInAlipayMethod(props.paymentType))
 const isWxpay = computed(() => isBuiltInWxpayMethod(props.paymentType))
+// 微信内或手机浏览器优先引导到小程序完成支付；电脑端保持扫码
+const useWeapp = computed(() => isWxpay.value && (isWeChatBrowser || isMobileUA))
 
 const dialogTitle = computed(() => {
   if (success.value) return t('payment.result.success')
@@ -162,8 +191,37 @@ function reopenPopup() {
   }
 }
 
+function openWeapp() {
+  if (weappScheme.value) window.location.href = weappScheme.value
+}
+
+async function renderWeappQR() {
+  if (!props.orderId) return
+  if (!isWeChatBrowser) {
+    try {
+      const res = await apiClient.get(`/payment/weapp/scheme?order_id=${props.orderId}`)
+      const link = (res.data as { scheme?: string } | null)?.scheme || ''
+      weappScheme.value = link
+    } catch {
+      weappScheme.value = ''
+    }
+  }
+  try {
+    const blob = await paymentAPI.weappQrcode(props.orderId)
+    if (weappImg.value) URL.revokeObjectURL(weappImg.value)
+    weappImg.value = URL.createObjectURL(blob)
+  } catch (error) {
+    console.error('[payment] Failed to load weapp QR:', error)
+    weappImg.value = ''
+  }
+}
+
 async function renderQR() {
   await nextTick()
+  if (useWeapp.value) {
+    await renderWeappQR()
+    return
+  }
   if (!qrCanvas.value || !qrUrl.value) return
   const logoSrc = getLogoForType()
   await QRCode.toCanvas(qrCanvas.value, qrUrl.value, {
