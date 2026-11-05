@@ -190,6 +190,8 @@ export interface CreateOrderRequest {
   openid?: string
   wechat_resume_token?: string
   is_mobile?: boolean
+  /** 小程序支付：只落单不预支付，由小程序拿到 openid 后补做 JSAPI */
+  defer_prepay?: boolean
 }
 
 export type CreateOrderResultType = 'order_created' | 'oauth_required' | 'jsapi_ready'

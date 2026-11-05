@@ -24,6 +24,15 @@ export interface PublicOrderVerifyResult {
 }
 
 export const paymentAPI = {
+  /** Fetch the WeChat mini-program QR (PNG blob) for a pending order */
+  async weappQrcode(orderId: number): Promise<Blob> {
+    const res = await apiClient.get(`/payment/weapp/qrcode?order_id=${orderId}`, {
+      responseType: 'blob',
+    })
+    return res.data as unknown as Blob
+  },
+
+
   /** Get payment configuration (enabled types, limits, etc.) */
   getConfig() {
     return apiClient.get<PaymentConfig>('/payment/config')

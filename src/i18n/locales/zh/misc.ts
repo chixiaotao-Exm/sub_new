@@ -361,6 +361,8 @@ export default {
       scanWxpay: '微信扫码支付',
       scanAlipayHint: '请使用手机打开支付宝，扫描二维码完成支付',
       scanWxpayHint: '请使用手机打开微信，扫描二维码完成支付',
+      scanWeappHint: '微信扫码或长按识别小程序码，在小程序内完成支付',
+      openWeapp: '打开微信小程序支付',
       payInNewWindow: '请在新窗口中完成支付',
       payInNewWindowHint: '支付页面已在新窗口打开，请在新窗口中完成支付后返回此页面',
       openPayWindow: '重新打开支付页面',
