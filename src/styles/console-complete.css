@@ -109,6 +109,14 @@ body { font-size: 15px; }
 .dark .btn-secondary { background: #202220 !important; border-color: var(--ib-line); color: #e5e7eb; }
 .btn-primary { background: var(--ib-accent) !important; color: #06251c !important; border-color: transparent; }
 .btn-primary:hover { filter: brightness(1.06); }
+.console-content button[class*="bg-green"],
+.console-content button[class*="bg-emerald"] { background-color: var(--ib-accent) !important; color: #2a1820 !important; }
+.console-content [class*="bg-emerald-100"],
+.console-content [class*="bg-emerald-50"] { background-color: var(--ib-accent-soft) !important; }
+.dark .console-content [class*="dark:bg-emerald-900"],
+.dark .console-content [class*="dark:bg-emerald-800"] { background-color: var(--ib-accent-soft) !important; }
+.dark .console-content [class*="dark:text-emerald-400"],
+.dark .console-content [class*="dark:text-emerald-300"] { color: var(--ib-accent) !important; }
 .dark .select-trigger, .dark .select-dropdown-portal { background: #202220 !important; border-color: var(--ib-line) !important; }
 .dark .console-content [class*="dark:bg-dark-800"],
 .dark .console-content [class*="dark:bg-dark-900"] { background-color: var(--ib-card) !important; }
