@@ -64,6 +64,7 @@
 </template>
 
 <script setup lang="ts">
+import { useChartTheme } from '@/composables/useChartTheme'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import LoadingSpinner from '@/components/common/LoadingSpinner.vue'
@@ -79,12 +80,13 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, ArcEleme
 const props = defineProps<{ loading: boolean, startDate: string, endDate: string, granularity: string, trend: TrendDataPoint[], models: ModelStat[] }>()
 defineEmits(['update:startDate', 'update:endDate', 'update:granularity', 'dateRangeChange', 'granularityChange', 'refresh'])
 const { t } = useI18n()
+const { colors: chartTheme } = useChartTheme()
 
 const modelData = computed(() => !props.models?.length ? null : {
   labels: props.models.map((m: ModelStat) => m.model),
   datasets: [{
     data: props.models.map((m: ModelStat) => m.total_tokens),
-    backgroundColor: ['#6EE7B7', '#34D399', '#A3A3A3', '#737373', '#5EEAD4', '#8A8A8A', '#06b6d4', '#4A4A4A']
+    backgroundColor: chartTheme.value.series
   }]
 })
 

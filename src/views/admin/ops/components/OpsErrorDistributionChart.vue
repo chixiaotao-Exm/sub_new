@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useChartTheme } from '@/composables/useChartTheme'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Chart as ChartJS, ArcElement, Legend, Tooltip } from 'chart.js'
@@ -21,13 +22,13 @@ const emit = defineEmits<{
 }>()
 const { t } = useI18n()
 
-const isDarkMode = computed(() => document.documentElement.classList.contains('dark'))
+const { colors: chartTheme } = useChartTheme()
 const colors = computed(() => ({
-  blue: '#6EE7B7',
+  blue: chartTheme.value.input,
   red: '#737373',
   orange: '#A3A3A3',
   gray: '#9ca3af',
-  text: isDarkMode.value ? '#9ca3af' : '#6b7280'
+  text: chartTheme.value.text
 }))
 
 const totalSlaErrors = computed(() =>
@@ -100,9 +101,9 @@ const options = computed(() => ({
   plugins: {
     legend: { display: false },
     tooltip: {
-      backgroundColor: isDarkMode.value ? '#1f2937' : '#ffffff',
-      titleColor: isDarkMode.value ? '#f3f4f6' : '#111827',
-      bodyColor: isDarkMode.value ? '#d1d5db' : '#4b5563'
+      backgroundColor: chartTheme.value.surface,
+      titleColor: chartTheme.value.text,
+      bodyColor: chartTheme.value.text
     }
   }
 }))

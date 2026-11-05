@@ -1,0 +1,129 @@
+/* Shared control states: selection changes the outline, never the surface. */
+:root {
+  --ib-page: #f8f7f9;
+  --ib-card: #ffffff;
+  --ib-line: #e2dce3;
+  --ib-accent: #a34b6b;
+  --ib-accent-soft: #f6edf1;
+  --ib-muted: #6b626d;
+  --control-bg: #ffffff;
+  --control-hover: #fcf8fa;
+  --control-fg: #302b33;
+  --control-muted: #6b626d;
+  --control-border: #d8d0da;
+  --control-disabled-bg: #eeeaef;
+  --control-disabled-fg: #716875;
+  --control-selected-border: #b56988;
+  --flow-color: #ae597b;
+  --flow-shimmer: #e1b0c2;
+  --control-shadow: 0 3px 12px rgb(78 42 60 / 7%);
+}
+.dark {
+  --ib-page: #1b1b1b;
+  --ib-card: #161616;
+  --ib-line: #343037;
+  --ib-accent: #e7b8cb;
+  --ib-accent-soft: #2e242b;
+  --ib-muted: #b5acb7;
+  --control-bg: #1c1b1e;
+  --control-hover: #242126;
+  --control-fg: #f4eef3;
+  --control-muted: #b8afba;
+  --control-border: #49424c;
+  --control-disabled-bg: #242126;
+  --control-disabled-fg: #a79ca9;
+  --control-selected-border: #bd869e;
+  --flow-color: #edb7cf;
+  --flow-shimmer: #fff0f7;
+  --control-shadow: 0 4px 14px rgb(0 0 0 / 13%);
+}
+
+html .payment-method-option,
+html .amount-option,
+html .quick-action,
+html :is(.btn-primary, .btn-success, .btn-alipay, .btn-wxpay, .btn-airwallex, .btn-stripe) {
+  position: relative;
+  border: 1px solid var(--control-border) !important;
+  background: var(--control-bg) !important;
+  color: var(--control-fg) !important;
+  opacity: 1;
+  box-shadow: none !important;
+  transition: border-color .18s ease, background-color .18s ease, box-shadow .18s ease;
+}
+html .payment-method-option,
+html .amount-option { border-radius: 10px !important; }
+html .quick-action { border-radius: 10px !important; }
+html .quick-action .text-xs { color: var(--control-muted); }
+html .quick-action :is(.text-gray-900, .text-white) { color: var(--control-fg); }
+html .payment-method-option [data-testid='payment-method-label'] { color: inherit; }
+
+html :is(.payment-method-option, .amount-option, .quick-action, .btn):not(:disabled):hover {
+  border-color: var(--control-selected-border) !important;
+}
+html :is(.payment-method-option, .amount-option, .quick-action):not(:disabled):hover {
+  background: var(--control-hover) !important;
+}
+html :is(.payment-method-selected, .amount-selected) {
+  background: var(--control-bg) !important;
+  border-color: var(--control-selected-border) !important;
+  color: var(--control-fg) !important;
+}
+html :is(.btn-primary, .btn-success, .btn-alipay, .btn-wxpay, .btn-airwallex, .btn-stripe) {
+  border-color: var(--control-selected-border) !important;
+}
+html :is(.payment-method-option, .amount-option, .quick-action, .btn):disabled {
+  background: var(--control-disabled-bg) !important;
+  color: var(--control-disabled-fg) !important;
+  border-color: var(--control-border) !important;
+  box-shadow: none !important;
+  opacity: 1;
+}
+
+/* A masked one-pixel ring stays above the surface without covering content. */
+@property --ui-flow-angle { syntax: '<angle>'; initial-value: 0deg; inherits: false; }
+@keyframes ui-control-flow { to { --ui-flow-angle: 360deg; } }
+html :is(.payment-method-option, .amount-option, .quick-action, .btn-primary, .btn-success)::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: 2;
+  border-radius: inherit;
+  padding: 1.5px;
+  pointer-events: none;
+  opacity: 0;
+  background: conic-gradient(from var(--ui-flow-angle), transparent 0deg, var(--flow-color) 40deg, var(--flow-shimmer) 64deg, transparent 110deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  transition: opacity .2s ease;
+}
+html :is(.payment-method-selected, .amount-selected):not(:disabled)::after,
+html :is(.quick-action, .btn-primary, .btn-success):not(:disabled):focus-visible::after {
+  opacity: 1;
+  animation: ui-control-flow 3.2s linear infinite;
+}
+@media (hover: hover) {
+  html :is(.payment-method-option, .amount-option, .quick-action, .btn-primary, .btn-success):not(:disabled):hover::after {
+    opacity: 1;
+    animation: ui-control-flow 3.2s linear infinite;
+  }
+}
+html :is(.payment-method-option, .amount-option, .quick-action, .btn):focus-visible {
+  outline: 2px solid var(--flow-color);
+  outline-offset: 3px;
+}
+.console-content :is(.card, .kpi) { border-color: var(--ib-line); }
+.console-content :is(.card, .kpi)::after {
+  background: conic-gradient(from var(--border-angle), transparent, var(--flow-color) 42deg, transparent 92deg, transparent);
+}
+.console-content :is(.card, .kpi):hover {
+  border-color: var(--control-selected-border);
+  box-shadow: var(--control-shadow);
+}
+@media (prefers-reduced-motion: reduce) {
+  html :is(.payment-method-option, .amount-option, .quick-action, .btn-primary, .btn-success)::after {
+    animation: none !important;
+    transition: none;
+  }
+}

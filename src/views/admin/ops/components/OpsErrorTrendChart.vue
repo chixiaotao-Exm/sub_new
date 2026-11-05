@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useChartTheme } from '@/composables/useChartTheme'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import {
@@ -34,15 +35,15 @@ const emit = defineEmits<{
 }>()
 const { t } = useI18n()
 
-const isDarkMode = computed(() => document.documentElement.classList.contains('dark'))
+const { colors: chartTheme } = useChartTheme()
 const colors = computed(() => ({
   red: '#737373',
   redAlpha: '#73737320',
-  purple: '#5EEAD4',
-  purpleAlpha: '#5EEAD420',
+  purple: chartTheme.value.output,
+  purpleAlpha: `${chartTheme.value.output}20`,
   gray: '#9ca3af',
-  grid: isDarkMode.value ? '#374151' : '#f3f4f6',
-  text: isDarkMode.value ? '#9ca3af' : '#6b7280'
+  grid: chartTheme.value.grid,
+  text: chartTheme.value.text
 }))
 
 const totalRequestErrors = computed(() => sumNumbers(props.points.map((p) => p.error_count_sla ?? 0)))
@@ -119,9 +120,9 @@ const options = computed(() => {
         labels: { color: c.text, usePointStyle: true, boxWidth: 6, font: { size: 10 } }
       },
       tooltip: {
-        backgroundColor: isDarkMode.value ? '#1f2937' : '#ffffff',
-        titleColor: isDarkMode.value ? '#f3f4f6' : '#111827',
-        bodyColor: isDarkMode.value ? '#d1d5db' : '#4b5563',
+        backgroundColor: chartTheme.value.surface,
+        titleColor: chartTheme.value.text,
+        bodyColor: chartTheme.value.text,
         borderColor: c.grid,
         borderWidth: 1,
         padding: 10,

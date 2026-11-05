@@ -58,6 +58,7 @@
 </template>
 
 <script setup lang="ts">
+import { useChartTheme } from '@/composables/useChartTheme'
 import { useI18n } from 'vue-i18n'
 import { computed, ref, watch } from 'vue'
 import {
@@ -98,9 +99,7 @@ const chartRef = ref<HTMLElement | null>(null)
 const zoom = ref<ZoomState>(resetZoom())
 const zoomed = computed(() => isZoomed(zoom.value))
 
-const isDark = computed(() =>
-  typeof document !== 'undefined' && document.documentElement.classList.contains('dark')
-)
+const { colors: chartTheme } = useChartTheme()
 
 const bucketLabel = computed(() => {
   const seconds = props.coverage?.bucket_seconds || 60
@@ -145,8 +144,8 @@ const chartData = computed(() => {
       {
         label: t('channelMonitorV2.chart.cacheDataset'),
         data: cacheRates,
-        borderColor: '#34D399',
-        backgroundColor: 'rgba(16, 185, 129, 0.08)',
+        borderColor: chartTheme.value.input,
+        backgroundColor: `${chartTheme.value.input}14`,
         yAxisID: 'yPct',
         tension: 0.4,
         cubicInterpolationMode: 'monotone' as const,
@@ -159,8 +158,8 @@ const chartData = computed(() => {
       {
         label: t('channelMonitorV2.chart.ttftDataset'),
         data: ttftP50,
-        borderColor: '#2DD4BF',
-        backgroundColor: 'rgba(14, 165, 233, 0.08)',
+        borderColor: chartTheme.value.output,
+        backgroundColor: `${chartTheme.value.output}14`,
         yAxisID: 'yTtft',
         tension: 0.4,
         cubicInterpolationMode: 'monotone' as const,
@@ -205,11 +204,11 @@ function smoothTrend(values: Array<number | null>): Array<number | null> {
 }
 
 const chartOptions = computed(() => {
-  const text = isDark.value ? '#9ca3af' : '#6b7280'
-  const grid = isDark.value ? '#374151' : '#f3f4f6'
-  const tooltipBg = isDark.value ? '#1f2937' : '#ffffff'
-  const tooltipTitle = isDark.value ? '#f3f4f6' : '#111827'
-  const tooltipBody = isDark.value ? '#d1d5db' : '#4b5563'
+  const text = chartTheme.value.text
+  const grid = chartTheme.value.grid
+  const tooltipBg = chartTheme.value.surface
+  const tooltipTitle = chartTheme.value.text
+  const tooltipBody = chartTheme.value.text
   return {
     responsive: true,
     maintainAspectRatio: false,
@@ -260,12 +259,12 @@ const chartOptions = computed(() => {
         position: 'right' as const,
         min: 0,
         ticks: {
-          color: '#2DD4BF',
+          color: chartTheme.value.output,
           font: { size: 10 },
           callback: (v: string | number) => formatMonitorMs(Number(v)),
         },
         grid: { display: false },
-        title: { display: true, text: t('channelMonitorV2.metrics.ttftP50'), color: '#2DD4BF', font: { size: 11 } },
+        title: { display: true, text: t('channelMonitorV2.metrics.ttftP50'), color: chartTheme.value.output, font: { size: 11 } },
       },
     },
   }

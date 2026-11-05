@@ -9,6 +9,7 @@ import { isIOSDevice } from '@/utils/device'
 import './style.css'
 import './styles/console-complete.css'
 import './styles/monitor-contrast.css'
+import './styles/interactive-surfaces.css'
 
 function initIOSViewportZoomFix() {
   // iOS Safari 在输入框字号小于 16px 时聚焦会自动放大页面，且失焦后不会恢复。

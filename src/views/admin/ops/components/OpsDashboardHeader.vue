@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useChartTheme } from '@/composables/useChartTheme'
 import { createInlineTranslator } from '@/i18n/inline'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -438,11 +439,12 @@ const healthScoreValue = computed<number | null>(() => {
   return typeof v === 'number' && Number.isFinite(v) ? v : null
 })
 
+const { colors: chartTheme } = useChartTheme()
 const healthScoreColor = computed(() => {
   if (isSystemIdle.value) return '#9ca3af' // gray-400
   const score = healthScoreValue.value
   if (score == null) return '#9ca3af'
-  if (score >= 90) return '#10b981' // green
+  if (score >= 90) return chartTheme.value.input // Healthy: rose accent, state label remains authoritative.
   if (score >= 60) return '#f59e0b' // yellow
   return '#ef4444' // red
 })

@@ -19,6 +19,7 @@
 </template>
 
 <script setup lang="ts">
+import { useChartTheme } from '@/composables/useChartTheme'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import {
@@ -54,19 +55,7 @@ const props = defineProps<{
   loading?: boolean
 }>()
 
-const isDarkMode = computed(() => {
-  return document.documentElement.classList.contains('dark')
-})
-
-const chartColors = computed(() => ({
-  text: isDarkMode.value ? '#e5e7eb' : '#374151',
-  grid: isDarkMode.value ? '#374151' : '#e5e7eb',
-  input: '#6EE7B7',
-  output: '#34D399',
-  cacheCreation: '#A3A3A3',
-  cacheRead: '#06b6d4',
-  cacheHitRate: '#5EEAD4'
-}))
+const { colors: chartColors } = useChartTheme()
 
 const chartData = computed(() => {
   if (!props.trendData?.length) return null

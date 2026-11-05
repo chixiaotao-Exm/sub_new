@@ -243,6 +243,7 @@
 </template>
 
 <script setup lang="ts">
+import { useChartTheme } from '@/composables/useChartTheme'
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
@@ -339,20 +340,7 @@ const showAccountCost = computed(() => props.showAccountCost)
 const distributionColspan = computed(() => showAccountCost.value ? 6 : 5)
 const activeView = ref<'model_distribution' | 'spending_ranking'>('model_distribution')
 
-const chartColors = [
-  '#6EE7B7',
-  '#34D399',
-  '#A3A3A3',
-  '#737373',
-  '#5EEAD4',
-  '#8A8A8A',
-  '#2DD4BF',
-  '#C4C4C4',
-  '#34D399',
-  '#4A4A4A',
-  '#06b6d4',
-  '#9CA3AF'
-]
+const { colors: chartTheme } = useChartTheme()
 
 const displayModelStats = computed(() => {
   const sourceStats = props.source === 'upstream'
@@ -374,7 +362,7 @@ const chartData = computed(() => {
     datasets: [
       {
         data: displayModelStats.value.map((m) => toFiniteNumber(props.metric === 'actual_cost' ? m.actual_cost : m.total_tokens)),
-        backgroundColor: chartColors.slice(0, displayModelStats.value.length),
+        backgroundColor: chartTheme.value.series.slice(0, displayModelStats.value.length),
         borderWidth: 0
       }
     ]
@@ -386,12 +374,12 @@ const rankingChartData = computed(() => {
 
   const labels = props.rankingItems.map((item, index) => `#${index + 1} ${getRankingUserLabel(item)}`)
   const data = props.rankingItems.map((item) => toFiniteNumber(item.actual_cost))
-  const backgroundColor = chartColors.slice(0, props.rankingItems.length)
+  const backgroundColor = chartTheme.value.series.slice(0, props.rankingItems.length)
 
   if (otherRankingItem.value) {
     labels.push(t('admin.dashboard.spendingRankingOther'))
     data.push(otherRankingItem.value.actual_cost)
-    backgroundColor.push('#94a3b8')
+    backgroundColor.push(chartTheme.value.other)
   }
 
   return {

@@ -420,6 +420,7 @@
 import { createInlineTranslator } from '@/i18n/inline'
 import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { chartPalette } from '@/composables/useChartTheme'
 import { useAppStore } from '@/stores'
 import { FeatureFlags, resolveFeatureFlag } from '@/utils/featureFlags'
 import LocaleSwitcher from '@/components/common/LocaleSwitcher.vue'
@@ -530,12 +531,10 @@ function setDailyUsageDays(days: 7 | 30 | 90) {
 // ==================== Ring Animation ====================
 
 const CIRCUMFERENCE = 2 * Math.PI * 68
-const RING_GRADIENTS = [
-  { from: '#14b8a6', to: '#5eead4' },
-  { from: '#6366F1', to: '#A5B4FC' },
-  { from: '#10B981', to: '#6EE7B7' },
-  { from: '#F59E0B', to: '#FCD34D' },
-]
+const RING_GRADIENTS = computed(() => {
+  const palette = chartPalette(isDark.value)
+  return palette.series.slice(0, 4).map(color => ({ from: color, to: color }))
+})
 
 const ringAnimated = ref(false)
 const displayPcts = ref<number[]>([])

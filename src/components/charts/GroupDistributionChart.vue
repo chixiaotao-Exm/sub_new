@@ -108,6 +108,7 @@
 </template>
 
 <script setup lang="ts">
+import { useChartTheme } from '@/composables/useChartTheme'
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
@@ -175,18 +176,7 @@ const toggleBreakdown = async (type: string, id: number | string) => {
   }
 }
 
-const chartColors = [
-  '#6EE7B7',
-  '#34D399',
-  '#A3A3A3',
-  '#737373',
-  '#5EEAD4',
-  '#8A8A8A',
-  '#2DD4BF',
-  '#C4C4C4',
-  '#34D399',
-  '#4A4A4A'
-]
+const { colors: chartTheme } = useChartTheme()
 
 const displayGroupStats = computed(() => {
   if (!props.groupStats?.length) return []
@@ -203,7 +193,7 @@ const chartData = computed(() => {
     datasets: [
       {
         data: displayGroupStats.value.map((g) => toFiniteNumber(props.metric === 'actual_cost' ? g.actual_cost : g.total_tokens)),
-        backgroundColor: chartColors.slice(0, displayGroupStats.value.length),
+        backgroundColor: chartTheme.value.series.slice(0, displayGroupStats.value.length),
         borderWidth: 0
       }
     ]
