@@ -195,8 +195,9 @@ export function useChannelMonitorFormat() {
     }
   }
 
-  function formatLatency(ms: number | null | undefined): string {
+  function formatLatency(ms: number | null | undefined, unit: 'ms' | 's' = 'ms'): string {
     if (ms == null) return t('monitorCommon.latencyEmpty')
+    if (unit === 's') return (ms / 1000).toFixed(2)
     return String(Math.round(ms))
   }
 

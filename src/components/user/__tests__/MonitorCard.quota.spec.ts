@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from 'vitest'
 
 import type { UserMonitorView } from '@/api/channelMonitor'
 import MonitorCard from '../monitor/MonitorCard.vue'
+import MonitorMetricPair from '../monitor/MonitorMetricPair.vue'
 
 const { isQuotaVisible } = vi.hoisted(() => ({
   isQuotaVisible: vi.fn(() => false),
@@ -56,6 +57,22 @@ function mountCard(item: UserMonitorView) {
 }
 
 describe('MonitorCard quota snapshot visibility', () => {
+  it('converts conversation latency and endpoint ping from milliseconds to seconds', () => {
+    const wrapper = mountCard(makeItem({ primary_latency_ms: 1500, primary_ping_latency_ms: 150 }))
+    const metrics = wrapper.findComponent(MonitorMetricPair)
+    expect(metrics.props('primaryValue')).toBe('1.50')
+    expect(metrics.props('primaryUnit')).toBe('s')
+    expect(metrics.props('secondaryValue')).toBe('0.15')
+    expect(metrics.props('secondaryUnit')).toBe('s')
+  })
+
+  it('preserves zero and missing latency values when displaying seconds', () => {
+    const wrapper = mountCard(makeItem({ primary_latency_ms: 0, primary_ping_latency_ms: null }))
+    const metrics = wrapper.findComponent(MonitorMetricPair)
+    expect(metrics.props('primaryValue')).toBe('0.00')
+    expect(metrics.props('secondaryValue')).toBe('monitorCommon.latencyEmpty')
+  })
+
   it('hides the quota block when the system switch is off even if data exists', () => {
     isQuotaVisible.mockReturnValue(false)
     const wrapper = mountCard(

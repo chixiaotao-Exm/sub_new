@@ -47,12 +47,12 @@
     <MonitorMetricPair
       primary-icon="bolt"
       :primary-label="t('monitorCommon.dialogLatency')"
-      :primary-value="formatLatency(item.primary_latency_ms)"
-      primary-unit="ms"
+      :primary-value="formatLatency(item.primary_latency_ms, 's')"
+      primary-unit="s"
       secondary-icon="globe"
       :secondary-label="t('monitorCommon.endpointPing')"
-      :secondary-value="formatLatency(item.primary_ping_latency_ms)"
-      secondary-unit="ms"
+      :secondary-value="formatLatency(item.primary_ping_latency_ms, 's')"
+      secondary-unit="s"
     />
 
     <!-- 配额模式：最新用量/余额快照（服务端已按系统开关剥离，此处 flag 为纵深防御） -->
