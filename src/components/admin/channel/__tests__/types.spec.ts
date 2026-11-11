@@ -42,6 +42,31 @@ describe('reasoning effort multipliers', () => {
 })
 
 describe('interval multiplier conversion', () => {
+  it.each([6.25e-6, 0, null])('preserves the independent OpenAI 12h write price across editing: %s', price => {
+    const form = apiIntervalsToForm([{
+      ...makeInterval({}),
+      input_price: 2.5e-6,
+      cache_write_price: 3.125e-6,
+      cache_write_12h_price: price,
+    }])
+
+    expect(form[0].cache_write_12h_price).toBe(price === null ? null : price * 1_000_000)
+    // Changing an unrelated value must not erase a distinct TTL override.
+    form[0].output_price = '10'
+    expect(formIntervalsToAPI(form)[0]).toMatchObject({
+      input_price: 2.5e-6,
+      output_price: 10e-6,
+      cache_write_price: 3.125e-6,
+      cache_write_12h_price: price,
+    })
+  })
+
+  it('rejects a negative 12h cache price in a context interval', () => {
+    expect(validateIntervals([
+      makeInterval({ cache_write_12h_price: -1 }),
+    ], 'token', t)).toContain('cacheWrite12hPrice')
+  })
+
   it('preserves component multipliers without MTok conversion', () => {
     const form = apiIntervalsToForm([{
       min_tokens: 272000,

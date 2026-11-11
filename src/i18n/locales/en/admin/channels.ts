@@ -34,6 +34,7 @@ export default {
         cacheWritePrice: 'Cache Write',
         cacheWrite5mPrice: 'Cache Write (5m)',
         cacheWrite1hPrice: 'Cache Write (1h)',
+        cacheWrite12hPrice: 'Cache Write (12h)',
         cacheReadPrice: 'Cache Read',
         imageOutputPrice: 'Image Output',
         perRequestPrice: 'Per Request',
@@ -84,6 +85,7 @@ export default {
           outputPrice: 'output price',
           cacheWritePrice: 'cache write price',
           cacheWrite1hPrice: '1h cache write price',
+          cacheWrite12hPrice: '12h cache write price',
           cacheReadPrice: 'cache read price',
           perRequestPrice: 'per-request price'
         }
@@ -131,10 +133,12 @@ export default {
         cacheWritePrice: 'Cache Write',
         cacheWrite5mPrice: 'Cache Write (5m)',
         cacheWrite1hPrice: 'Cache Write (1h)',
+        cacheWrite12hPrice: 'Cache Write (12h)',
         cacheReadPrice: 'Cache Read',
         cacheWritePriceShort: 'Cache W',
         cacheWrite5mPriceShort: 'Cache W 5m',
         cacheWrite1hPriceShort: 'Cache W 1h',
+        cacheWrite12hPriceShort: 'Cache W 12h',
         cacheReadPriceShort: 'Cache R',
         imageInputPrice: 'Image Input',
         imageTokenPrice: 'Image Output',

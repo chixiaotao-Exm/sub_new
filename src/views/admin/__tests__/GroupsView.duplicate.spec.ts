@@ -353,6 +353,41 @@ describe('GroupsView duplicate action', () => {
     wrapper.unmount()
   })
 
+  it.each([7.5e-6, 0, null])('preserves the group 12h cache-write price %s during an unrelated edit', async (price) => {
+    const group = {
+      ...sourceGroup,
+      model_pricing: [{
+        platform: 'openai', models: ['example-model'], billing_mode: 'token',
+        input_price: 3e-6, output_price: 15e-6,
+        cache_write_price: 3.75e-6, cache_write_1h_price: 6e-6,
+        cache_write_12h_price: price, cache_read_price: 0.3e-6,
+        image_input_price: null, image_output_price: null, per_request_price: null,
+        reasoning_effort_multipliers: null, intervals: [], time_pricing: null,
+      }],
+    }
+    listGroups.mockResolvedValue({ items: [group], total: 1, page: 1, page_size: 20, pages: 1 })
+    updateGroup.mockResolvedValue(group)
+    const wrapper = mountView()
+    await flushPromises()
+    await wrapper.findAll('button').find(button => button.text() === 'common.edit')!.trigger('click')
+    await flushPromises()
+
+    const field = wrapper.get<HTMLInputElement>('[data-testid="cache-write-12h-price"]')
+    if (price === null) expect(field.element.value).toBe('')
+    else expect(Number(field.element.value)).toBeCloseTo(price * 1e6, 8)
+    await wrapper.get('#edit-group-form input').setValue('Renamed only')
+    await wrapper.get('#edit-group-form').trigger('submit')
+    await flushPromises()
+
+    expect(showError).not.toHaveBeenCalled()
+    expect(updateGroup).toHaveBeenCalledTimes(1)
+    expect(updateGroup).toHaveBeenCalledWith(42, expect.objectContaining({
+      name: 'Renamed only',
+      model_pricing: [expect.objectContaining({ cache_write_12h_price: price })],
+    }))
+    wrapper.unmount()
+  })
+
   it('blocks saving an invalid group reasoning multiplier and allows clearing it', async () => {
     const group = {
       ...sourceGroup,

@@ -105,4 +105,23 @@ describe('PricingEntryCard default price auto-fill', () => {
       expect(emitted.input_price).toBe('1.5')
     }
   })
+
+  it('does not overwrite a manual 12h write price when the first model is added', async () => {
+    const entry = { ...createEntry(), cache_write_12h_price: '6.25' }
+    const wrapper = addModels(entry, ['gpt-6.1-sol'])
+    await flushPromises()
+
+    expect(getModelDefaultPricing).not.toHaveBeenCalled()
+    expect(emittedEntries(wrapper).at(-1)).toMatchObject({
+      models: ['gpt-6.1-sol'], cache_write_12h_price: '6.25', input_price: null,
+    })
+  })
+
+  it('loads the 12h catalog price into the same per-million form units as other token prices', async () => {
+    getModelDefaultPricing.mockResolvedValue({ found: true, input_price: 2.5e-6, cache_write_12h_price: 6.25e-6 })
+    const wrapper = addModels(createEntry(), ['gpt-6.1-sol'])
+    await flushPromises()
+
+    expect(emittedEntries(wrapper).at(-1)).toMatchObject({ input_price: 2.5, cache_write_12h_price: 6.25 })
+  })
 })

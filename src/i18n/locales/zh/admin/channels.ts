@@ -34,6 +34,7 @@ export default {
         cacheWritePrice: '缓存写入',
         cacheWrite5mPrice: '缓存写入（5m）',
         cacheWrite1hPrice: '缓存写入（1h）',
+        cacheWrite12hPrice: '缓存写入（12h）',
         cacheReadPrice: '缓存读取',
         imageOutputPrice: '图片输出',
         perRequestPrice: '每次请求',
@@ -84,6 +85,7 @@ export default {
           outputPrice: '输出价格',
           cacheWritePrice: '缓存写入价格',
           cacheWrite1hPrice: '1h 缓存写入价格',
+          cacheWrite12hPrice: '12h 缓存写入价格',
           cacheReadPrice: '缓存读取价格',
           perRequestPrice: '单次价格'
         }
@@ -131,10 +133,12 @@ export default {
         cacheWritePrice: '缓存写入',
         cacheWrite5mPrice: '缓存写入（5m）',
         cacheWrite1hPrice: '缓存写入（1h）',
+        cacheWrite12hPrice: '缓存写入（12h）',
         cacheReadPrice: '缓存读取',
         cacheWritePriceShort: '缓存写',
         cacheWrite5mPriceShort: '缓存写 5m',
         cacheWrite1hPriceShort: '缓存写 1h',
+        cacheWrite12hPriceShort: '缓存写 12h',
         cacheReadPriceShort: '缓存读',
         imageInputPrice: '图片输入',
         imageTokenPrice: '图片输出',

@@ -13,6 +13,17 @@ const interval: IntervalFormEntry = {
 }
 
 describe('pricing interval token bounds', () => {
+  it('accepts a tier priced only for 12h cache writes and preserves it when another field changes', async () => {
+    const wrapper = mount(IntervalRow, { props: { interval: { ...interval, cache_write_12h_price: 6.25 }, mode: 'token' } })
+    expect(wrapper.classes()).not.toContain('border-red-400')
+    const input = wrapper.get<HTMLInputElement>('[data-testid="interval-cache-write-12h-price"]')
+    expect(input.element.value).toBe('6.25')
+    await wrapper.findAll('input[type="number"]')[0].setValue('1000')
+    expect(wrapper.emitted('update')?.[0]?.[0]).toMatchObject({ min_tokens: 1000, cache_write_12h_price: 6.25 })
+    await input.setValue('')
+    expect(wrapper.emitted('update')?.at(-1)?.[0]).toMatchObject({ cache_write_12h_price: null })
+  })
+
   it.each([
     ['1e6', 1000000, 1000000],
     ['2.72e5', 272000, 272000],
